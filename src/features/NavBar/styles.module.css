@@ -1,0 +1,9 @@
+.navBar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: Onest;
+    font-weight: 900;
+}

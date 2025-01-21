@@ -1,0 +1,136 @@
+@import './fonts.css';
+
+:root {
+  /* COLORS */
+    --background-color-main: #ffffff;
+    --accent-color-main: #A694FF;
+    /* --accent-color-main: #8291FF; */
+    --text-color-dull: #988DB9;
+    --text-color-regular: #201541;
+    --text-color-bright: #680AFF;
+    --text-color-opposite: #ffffff;
+
+    /* FONTS */
+    --font-size-big: 32px;
+    --font-size-regular: 24px;
+    --font-size-small: 16px;
+
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-extraLight: 200;
+
+    --font-family-regular: 'Onest';
+    --font-family-accent: 'NEUTRALFACE';
+
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 0px; 
+    display: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+  }
+  
+  /* scrollbar fader */
+  ::-webkit-scrollbar-thumb {
+    background-color: white; 
+    border-radius: 4px; 
+  }
+  
+  /* scrollbar background */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  }
+
+  html {
+    -webkit-overflow-scrolling: touch;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+
+    /*Mobile */
+    padding: 0rem 0rem;
+    font-size: var(--font-size-small);
+    overflow: hidden;
+
+    /*Tablet */
+    @media (min-width: 768px) {
+      padding: 1rem 1rem;
+      font-size: var(--font-size-regular);
+      }
+    /*PC */
+    @media (min-width: 1200px) {
+      padding: 1rem 1rem;
+      font-size: var(--font-size-big);
+      } 
+
+  }
+
+
+  
+  section {
+  
+    height:100vh;
+      width:100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    scroll-snap-align: start;
+  
+    @media (min-width:768px) {
+      height:90vh;
+      min-height:400px;
+      margin-top:55px;
+    }
+  }
+  
+  .notif {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vw;
+  }
+  
+h3 {
+  font-size: 1.2rem;
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color-regular) ;
+  @media (min-width:768px) {
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+  }
+}
+
+
+p {
+  color: var(--text-color-dull) ;
+  font-weight: var(--font-weight-extraLight);
+  font-size: 1.0rem;
+  @media (min-width:768px) {
+    font-size: 0.7rem;
+  }
+}
+
+article {
+  color: var(--text-color-regular) ;
+  font-weight: var(--font-weight-regular);
+  font-size: 1.0rem;
+  @media (min-width:768px) {
+    font-size: 0.7rem;
+  }
+
+}

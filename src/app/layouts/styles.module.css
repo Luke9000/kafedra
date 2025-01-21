@@ -1,0 +1,23 @@
+.wrapper {
+    flex: 1;
+    margin-top:20vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    display: flex; 
+    flex-direction: column;
+}
+
+Footer {
+    
+    
+    @media (min-width:768px) {
+        display: none;
+        }
+}

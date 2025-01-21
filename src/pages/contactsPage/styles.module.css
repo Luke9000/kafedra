@@ -1,0 +1,29 @@
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+  @media (min-width:768px) {
+    margin-top: 25vh;
+    flex-direction: row;
+    gap: 5vw;
+  }
+}
+
+.s_2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+}
+
+.s_2__block {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.contacts_list {
+
+}

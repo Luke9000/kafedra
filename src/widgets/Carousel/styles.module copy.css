@@ -1,0 +1,46 @@
+.control {
+    transition: opacity 150ms ease;
+    opacity: 0;
+    &[data-inactive] {
+      opacity: 0;
+      cursor: default;
+    }
+  }
+
+  .root {
+    &:hover {
+      .controls {
+        opacity: 1;
+      }
+    }
+  }
+
+  .indicators {
+    align-items: end;
+    gap: 1vw;
+    transform: translateY(350%);
+  }
+
+  .indicator {
+    
+    color: red;
+    background-color: transparent;
+
+    border: 2px solid red;
+    width: 12px;
+    height: 12px;
+    transition: width 250ms ease;
+    border-radius: 3px;
+    border-color: var(--text-color-dull);
+  
+    &[data-active] {
+      width: 20px;
+      height: 20px;
+      border-color: var(--accent-color-main);
+    }
+  }
+
+  .container {
+
+    /* gap: 1vw; */
+  }

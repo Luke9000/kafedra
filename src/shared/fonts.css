@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700; /*BOLD */
+    font-style: normal;
+    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400; /*REGULAR */
+    font-style: normal;
+    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300; /*LIGHT */
+    font-style: normal;
+    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NEUTRALFACE';
+    font-weight: 700; /*BOLD */
+    font-style: normal;
+    src: local('NEUTRALFACE'), url(./assets/fonts/NEUTRALFACE/NEUTRALFACE-BOLD.OTF) format('opentype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 400; 
+    font-style: normal;
+    src: local('Onest'), url(./assets/fonts/Onest/Onest-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 200; 
+    font-style: normal;
+    src: local('Onest'), url(./assets/fonts/Onest/Onest-ExtraLight.ttf) format('truetype');
+}
+
+
+
+/*
+100	Thin (Hairline)	Самый тонкий
+200	Extra Light (Ultra Light)	Очень лёгкий
+300	Light	Лёгкий
+400	Regular (Normal)	Обычный (по умолчанию)
+500	Medium	Средний
+600	Semi Bold (Demi Bold)	Полужирный
+700	Bold	Жирный
+800	Extra Bold	Очень жирный
+900	Black (Heavy)	Самый жирный
+*/

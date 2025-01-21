@@ -1,0 +1,58 @@
+.nav {
+    width: 100%;
+    padding: 0.8rem 1.5rem ;
+    top: 0vh;
+    left:0px;
+    position: fixed;
+    z-index: 5;
+    height: 10vh;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.3rem;
+    align-items: center;
+    align-content:flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @media (min-width: 768px) {
+      padding: 2.0rem 1.5rem ;
+      top: 8vh;
+      flex-direction: row;
+      justify-content: center;
+      } 
+  }
+  
+  .navButton {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.0rem;
+    @media (min-width: 768px) {
+        font-size: 0.8rem;
+      } 
+    color: var(--text-color-dull);
+  }
+  .navButton:hover {
+    font-size: 0.9rem;
+  }
+  .active {
+    background-color: var(--accent-color-main);
+    color: white;
+  }
+  
+  button {
+    color:var(--text-color-regular);
+    
+    line-height: 1.1;
+    transition: all 0.3s;
+
+  }
+  
+  button:hover:not(.active) {
+    cursor:pointer;
+  }
+  

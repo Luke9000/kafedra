@@ -1,0 +1,35 @@
+.taskSection {
+    display:flex;
+    flex-direction: row;
+    gap: 8vw;
+    justify-content: center;
+}
+
+.task {
+    width: 25vw;
+
+}
+
+.extraTask {
+    width: 25vw;
+     display:flex;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+
+.titleWithText {
+
+    display:flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+
+.disableCopy {
+    pointer-events: none;
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
