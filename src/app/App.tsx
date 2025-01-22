@@ -1,8 +1,4 @@
-
-
 import React from 'react';
-
-// import { isTestRunning } from '../shared/global';
 import MainPage from '../pages/mainPage'
 import AboutPage from '../pages/aboutPage'
 import InfoPage from '../pages/infoPage'

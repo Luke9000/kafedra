@@ -1,20 +1,14 @@
 
 import Layout from '../../app/layouts/DashboardLayout';
-import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import { SectionNavigator } from '../../features/fullScreenNav/sectionNavigator';
-import styles from './styles.module.css';
-import { Notification } from '@mantine/core';
-import {teachers} from '../../entities/teachers'
-import Carousel from '../../widgets/Carousel';
+import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
+import event7 from '../../shared/assets/images/events/7.png';
+import event8 from '../../shared/assets/images/events/8.jpg';
+import event1 from '../../shared/assets/images/events/event1.png';
+import event2 from '../../shared/assets/images/events/event2.png';
+import event3 from '../../shared/assets/images/events/event3.png';
 import Slider from '../../widgets/ParallaxCarousel';
-import event1 from '../../shared/assets/images/events/event1.png'
-import event2 from '../../shared/assets/images/events/event2.png'
-import event3 from '../../shared/assets/images/events/event3.png'
-import event4 from '../../shared/assets/images/events/event4.jpg'
-import event5 from '../../shared/assets/images/events/event5.png'
-import event6 from '../../shared/assets/images/events/6.jpg'
-import event7 from '../../shared/assets/images/events/7.png'
-import event8 from '../../shared/assets/images/events/8.jpg'
+import styles from './styles.module.css';
 const MainPage = () => {
   const sections = ['События', 'Работы студентов'];
   const { containerRef, activeSection, scrollToSection } = useScrollNavigation({ sections });

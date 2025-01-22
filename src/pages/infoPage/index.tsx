@@ -1,13 +1,10 @@
 
 import Layout from '../../app/layouts/DashboardLayout';
-import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import { SectionNavigator } from '../../features/fullScreenNav/sectionNavigator';
-import styles from './styles.module.css';
-import { ActionIcon, Button, Flex, Notification } from '@mantine/core';
-import Table from '../../widgets/Table'
-import {Title,Text} from '@mantine/core'
+import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import DownloadIcon from "../../shared/assets/icons/svg-raw/Download.svg?react";
 import LinkIcon from "../../shared/assets/icons/svg-raw/Link.svg?react";
+import styles from './styles.module.css';
 
 
 const InfoPage = () => {

@@ -1,10 +1,7 @@
 import Layout from '../../app/layouts/DashboardLayout';
-import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import { SectionNavigator } from '../../features/fullScreenNav/sectionNavigator';
+import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import styles from './styles.module.css';
-import { Notification } from '@mantine/core';
-import Carousel from '../../widgets/Carousel';
-import {teachers} from '../../entities/teachers'
 
 const ContactsPage = () => {
   const sections = ['Адрес', 'Обратная связь'];

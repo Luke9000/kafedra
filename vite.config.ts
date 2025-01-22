@@ -13,7 +13,7 @@ export default defineConfig({
     host: true
 },
 
-  base: '/',
+  base: '/kafedra',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

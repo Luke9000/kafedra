@@ -1,9 +1,6 @@
-import { setLocalStorageItem, getLocalStorageItem} from "../../shared/libs/manipulateLocalStarage/manipulateLocalStorage"; 
 import clsx from 'clsx';
-import styles from './styles.module.css'
-import { useEffect, useState } from 'react';
-import { TEST_DURATION } from "../../shared/global";
-import Button from '../../shared/ui/button'
+import Button from '../../shared/ui/button';
+import styles from './styles.module.css';
 
 
 interface Props {

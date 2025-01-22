@@ -1,16 +1,12 @@
 // import  Icon  from "../../shared/ui/icon";
-import styles from "./styles.module.css";
-import { Link} from "react-router-dom";
-import LogoClean from "../../shared/assets/icons/svg-raw/Logo-clean.svg?react";
-import Info from "../../shared/assets/icons/svg-raw/Info.svg?react";
-import Contact from "../../shared/assets/icons/svg-raw/Contact.svg?react";
+import { Link } from "react-router-dom";
 import About from "../../shared/assets/icons/svg-raw/About.svg?react";
+import Contact from "../../shared/assets/icons/svg-raw/Contact.svg?react";
+import Info from "../../shared/assets/icons/svg-raw/Info.svg?react";
+import LogoClean from "../../shared/assets/icons/svg-raw/Logo-clean.svg?react";
+import styles from "./styles.module.css";
 
 const index = () => {
-
-    const handleClickIcon = () => {
-            console.log('click')
-        };
 
   return (  
         <footer className={styles.wrapper}>
@@ -43,7 +39,6 @@ const index = () => {
 
                 </ul> 
             </nav>
-        {/* <button onClick={toggleTheme}>{theme}</button> */}
       </footer>
   )
 }
