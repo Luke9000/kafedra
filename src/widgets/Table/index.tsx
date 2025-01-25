@@ -49,7 +49,7 @@ const SwitchableTable: React.FC = () => {
   const data = activeTable === 'base' ? baseElements : newElements;
 
   const visibleData = splitIntoChunks(data, COLUMN_COUNT).slice(0, ROW_COUNT);
-  setActiveTable('base') //trash
+  // setActiveTable('base') //trash
   // Логика перетаскивания для горизонтальной прокрутки
   const handleMouseDown = (e: React.MouseEvent) => {
     const container = containerRef.current;
