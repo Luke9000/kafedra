@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 
 const InfoPage = () => {
-  const sections = ['Расписание', 'ВКР', 'Полезные ссылки'];
+  const sections = ['Расписание', 'Дипломная работа', 'Полезные ссылки'];
   const { containerRef, activeSection, scrollToSection } = useScrollNavigation({ sections });
 
 
@@ -38,32 +38,23 @@ const InfoPage = () => {
             
             <div className={styles.flexCol}>
               <div className={styles.text}>
-                <h3>Инструкция, титульные листы, раздаточные материалы</h3>
-                <p>Подробная инструкция и необходимые материалы для выполнения ВКР</p>
+                <h3>Общее расписание</h3>
+                <p>Расписание предметов групп</p>
               </div>
-              <div className={styles.filler}></div>
-              <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
-              <DownloadIcon/>
-              </div>
-            </div>
-  
-            <div className={styles.flexCol}>
-              <div className={styles.text}>
-                <h3>Набор документов, необходимых для заказчика</h3>
-                <p>Если у вас есть заказчик, вы можете заполнить с ним данные документы и передать на их кафедру</p>
-              </div>
-              <div className={styles.filler}></div>
-              <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
-              <DownloadIcon/>
+              <div className={styles.filler2}></div>
+              <div className={styles.IconWrapper} >
+                <a target="_blank" rel="noopener noreferrer" href='https://sutd.ru/upload/raspisanie/raspisanie_o_iita_24_25.xlsx'>
+                <DownloadIcon/>
+                </a>
               </div>
             </div>
   
             <div className={styles.flexCol}>
               <div className={styles.text}>
-                <h3>Набор необходимых документов</h3>
-                <p>Документы необходимо заполнить, распечатать, подписать и отнести на кафедру</p>
+                <h3>Кафедральное расписание</h3>
+                <p>Расписание предметов кафедры</p>
               </div>  
-              <div className={styles.filler}></div>
+              <div className={styles.filler2}></div>
               <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
               <DownloadIcon/>
               </div>

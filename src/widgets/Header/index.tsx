@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
 import Logo from "../../shared/assets/icons/logo";
 import styles from "./styles.module.css";
+import { NavLink } from "react-router-dom";
 
 const index = () => {
   return (

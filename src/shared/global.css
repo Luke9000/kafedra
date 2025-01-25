@@ -77,8 +77,17 @@
 
   }
 
-
+  iframe {
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+  }
   
+strong {
+
+  color:var(--text-color-bright);
+}
+
   section {
   
     height:100vh;

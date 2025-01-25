@@ -45,6 +45,11 @@
   flex-grow: 1;
 }
 
+.filler2 {
+  height: 0vh;
+}
+
+
 .text {
   display: flex;
   flex-direction: column;

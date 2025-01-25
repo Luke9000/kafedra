@@ -12,7 +12,7 @@ export default function DashboardLayout({ children}:Props ) {
 
   return (
     <div>
-      <Header ></Header>
+      <Header></Header>
       <main className={styles.wrapper}>
         {children}
       </main>

@@ -2,6 +2,8 @@ import Layout from '../../app/layouts/DashboardLayout';
 import { SectionNavigator } from '../../features/fullScreenNav/sectionNavigator';
 import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import styles from './styles.module.css';
+import Map from '../../widgets/Map'
+
 
 const ContactsPage = () => {
   const sections = ['Адрес', 'Обратная связь'];
@@ -21,14 +23,7 @@ const ContactsPage = () => {
        
       <div className={styles.sections} ref={containerRef}>
       
-      {/* <Notification className='notif' withBorder color="grape" radius="lg" title="">
-            Оставаясь на сайте вы соглашаетесь с условиями пользовательского соглашения
-          </Notification> */}
-        {/* {sections.map((_, index) => (
-          <section className={styles.section} key={index}>
-            <Carousel data = {data} />
-          </section>
-        ))} */}
+
         <section className={styles.section}>
           <div className={styles.firstSection}>
             <div className='text_s1'>
@@ -36,7 +31,7 @@ const ContactsPage = () => {
               <p>Кабинеты 452 - 463</p>
             </div>
           {/* <Carousel data = {teachers} slideSize={95} /> */}
-          <iframe id="map_434410536"   width="100%" height="100%" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+          <Map></Map>
            {/* frameborder=0  */}
           </div>
         </section>
