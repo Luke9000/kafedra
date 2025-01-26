@@ -30,9 +30,7 @@ const ContactsPage = () => {
               <h3>Вознесенский проспект 46</h3>
               <p>Кабинеты 452 - 463</p>
             </div>
-          {/* <Carousel data = {teachers} slideSize={95} /> */}
           <Map></Map>
-           {/* frameborder=0  */}
           </div>
         </section>
         <section  className={styles.section}>

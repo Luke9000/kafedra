@@ -13,6 +13,15 @@ const MainPage = () => {
   const sections = ['События', 'Работы студентов'];
   const { containerRef, activeSection, scrollToSection } = useScrollNavigation({ sections });
 
+  
+  // const images = [
+  //   {event1},
+  //   "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80",
+  //   "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80",
+  //   "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80",
+    
+  // ];
+
   const images = [
     { src: event1, description: "Митап IT Специалистов" },
     { src: event2, description: "День донора" },
@@ -34,6 +43,15 @@ const MainPage = () => {
       />
        
       <div className={styles.sections} ref={containerRef}>
+      
+      {/* <Notification className='notif' withBorder color="grape" radius="lg" title="">
+            Оставаясь на сайте вы соглашаетесь с условиями пользовательского соглашения
+          </Notification> */}
+        {/* {sections.map((_, index) => (
+          <section className={styles.section} key={index}>
+            <Carousel data = {data} />
+          </section>
+        ))} */}
         <section className={styles.section}>
           <div className={styles.sliderWrapper}>
             <Slider images={images} />

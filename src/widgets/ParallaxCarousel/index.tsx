@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Slider.css";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 
 interface ImageData {
   src: string; // Путь к изображению
@@ -20,9 +20,8 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
   const [currentPercentage, setCurrentPercentage] = useState<number>(0);
 
   useEffect(() => {
-    
     if (trackRef.current) {
-      const initialPercentage = -25; 
+      const initialPercentage = -25;
       setCurrentPercentage(initialPercentage);
       setPrevPercentage(initialPercentage);
       trackRef.current.style.transform = `translate(${initialPercentage}%, -50%)`;
@@ -40,17 +39,37 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
   };
 
   const handleMouseMove = (e: React.MouseEvent | React.TouchEvent) => {
-     e.preventDefault();
+    e.preventDefault();
     if (!mouseDownAt) return;
 
     const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
     const mouseDelta = mouseDownAt - clientX;
-    // const maxDelta = window.innerWidth / 2;
     const maxDelta = (window.innerWidth * MAX_DELTA_PERCENTAGE) / 100;
     const percentage = (mouseDelta / maxDelta) * -100;
-    const nextPercentage = Math.max(Math.min(prevPercentage + percentage, isMobile ? -5 : -25), isMobile ? -95 : -75);
+    const nextPercentage = Math.max(
+      Math.min(prevPercentage + percentage, isMobile ? -5 : -25),
+      isMobile ? -95 : -75
+    );
 
+    updateSlider(nextPercentage);
+  };
+
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    const delta = e.deltaY || e.deltaX; // Используем вертикальную или горизонтальную прокрутку
+    const maxDelta = MAX_DELTA_PERCENTAGE / 10;
+    const percentage = (delta / maxDelta) * -5;
+    const nextPercentage = Math.max(
+      Math.min(currentPercentage + percentage, isMobile ? -5 : -25),
+      isMobile ? -95 : -75
+    );
+
+    updateSlider(nextPercentage);
+  };
+
+  const updateSlider = (nextPercentage: number) => {
     setCurrentPercentage(nextPercentage);
+    setPrevPercentage(nextPercentage);
 
     if (trackRef.current) {
       trackRef.current.style.transform = `translate(${nextPercentage}%, -50%)`;
@@ -69,18 +88,18 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
       onTouchEnd={handleMouseUp}
       onMouseMove={handleMouseMove}
       onTouchMove={handleMouseMove}
+      onWheel={handleWheel} // Добавили обработчик события прокрутки
     >
       <div ref={trackRef} className="image-track">
         {images.map((image, index) => (
-          <div className='imageContainer' >
-          <img
-            key={index}
-            className="image"
-            src={image.src}
-            alt={image.description}
-            draggable="false"
-          />
-          <p className="imageText">{image.description}</p>
+          <div className="imageContainer" key={index}>
+            <img
+              className="image"
+              src={image.src}
+              alt={image.description}
+              draggable="false"
+            />
+            <p className="imageText">{image.description}</p>
           </div>
         ))}
       </div>

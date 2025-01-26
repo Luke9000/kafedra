@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   @media (min-width:768px) {
-    margin-top: 25vh;
+    padding-top: 25vh;
     flex-direction: row;
     gap: 5vw;
   }
