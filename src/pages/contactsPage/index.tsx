@@ -41,9 +41,13 @@ const ContactsPage = () => {
               <h3>Директорат ИИТА</h3>
               <p>Отвечает за организацию и управляет учебным процессом студентов в институте</p>
               <div className={styles.contacts_list}>
-                <article>ул. Большая Морская, д. 18, каб. 425</article>
-                <article>+7 (812) 315-12-77</article>
-                <article>iita.dekanat@mail.ru</article>
+                <article>
+                  <a href='tel:+78123151277'>+7 (812) 315-12-77</a>
+                </article>
+                <article>
+                  <a href='mailto:iita.dekanat@mail.ru'>iita.dekanat@mail.ru</a>
+                </article>
+                <article></article>
               </div>
             </div>
 
@@ -51,10 +55,18 @@ const ContactsPage = () => {
               <h3>Кафедра</h3>
               <p>Отвечает за научную, учебную и методическую деятельность</p>
               <div className={styles.contacts_list}>
-                <article>+7 (812) 570-40-64</article>
-                <article>+7 (921) 945-14-72</article>
-                <article>soshnikov@prouniver.ru</article>
-                <article>iskd@sutd.ru</article>
+              <article>
+                <a href='tel:+78125704064'>+7 (812) 570-40-64</a>
+              </article>
+              <article>
+                <a href='tel:+79219451472'>+7 (921) 945-14-72</a>
+              </article>
+              <article>
+                <a href='mailto:soshnikov@prouniver.ru'>soshnikov@prouniver.ru</a>
+              </article>
+              <article>
+                <a href='mailto:iskd@sutd.ru'>iskd@sutd.ru</a>
+              </article>
               </div>
             </div>
         </div>
