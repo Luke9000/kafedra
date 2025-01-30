@@ -1,63 +1,40 @@
-import image1 from '../shared/assets/images/prep.png'
-import image2 from '../shared/assets/images/stud.png'
-
+import t1 from '../shared/assets/images/teachers/1x.png';
+import t2 from '../shared/assets/images/teachers/2x.png';
+import t3 from '../shared/assets/images/teachers/3x.png';
+import t4 from '../shared/assets/images/teachers/4x.png';
+import t5 from '../shared/assets/images/teachers/5x.png';
 
 
 export const teachers = [
   
     {
-      "text" : "Петров Иван",
+      "text" : "Ярославцева Елена Константиновна",
       "subtext" : "Старший преподаватель",
-      "image" : image1
+      "image" : t1
     },
 
     {
-      "text" : "Маббова Табба",
+      "text" : "Мургоева Ирма Юрьевна",
       "subtext" : "Старший преподаватель",
-      "image" : image2
+      "image" : t2
     },
 
     {
-      "text" : "Петров Иван",
+      "text" : "Суханов Михаил Борисович",
       "subtext" : "Старший преподаватель",
-      "image" : image1
+      "image" : t3
     },
 
     {
-      "text" : "Маббова Табба",
+      "text" : "Шевякова Анастасия Рустамовна",
       "subtext" : "Старший преподаватель",
-      "image" : image2
+      "image" : t4
     },
 
     {
-      "text" : "Петров Иван",
+      "text" : "Медведева Анна Александровна",
       "subtext" : "Старший преподаватель",
-      "image" : image1
+      "image" : t5
     },
-
-    {
-      "text" : "Маббова Табба",
-      "subtext" : "Старший преподаватель",
-      "image" : image2
-    },
-
-    {
-      "text" : "Маббова Табба",
-      "subtext" : "Старший преподаватель",
-      "image" : image2
-    },
-
-    {
-      "text" : "Петров Иван",
-      "subtext" : "Старший преподаватель",
-      "image" : image1
-    },
-
-    {
-      "text" : "Маббова Табба",
-      "subtext" : "Старший преподаватель",
-      "image" : image2
-    },
-
   ]
 ;

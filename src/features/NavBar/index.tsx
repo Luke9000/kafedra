@@ -1,23 +1,64 @@
-import clsx from 'clsx';
-import Button from '../../shared/ui/button';
-import styles from './styles.module.css';
-
+import { useEffect, useState } from "react";
+import clsx from "clsx";
+import Button from "../../shared/ui/button";
+import "./navbar.css";
 
 interface Props {
-    className?: string;
-    marginTop?: number;
-} 
-
-const NavBar = ({className, marginTop}:Props) => {
-
-  return (
-    <div className={clsx(styles.navBar, className)}
-    style={{ marginTop: `${marginTop}vh` }}>
-        <Button text = 'Выпускники' status="default"> </Button>
-        <Button text  = 'Преподаватели' status="active"> </Button>
-        <Button text = 'История кафедры' status="default"> </Button>
-    </div>
-  )
+  className?: string;
 }
 
-export default NavBar
+const NavBar = ({ className }: Props) => {
+  const [sections, setSections] = useState<string[]>([]);
+  const [activeSection, setActiveSection] = useState<string>("");
+
+  useEffect(() => {
+    const sectionIds = Array.from(document.querySelectorAll("section[id]")).map(
+      (section) => section.id
+    );
+    setSections(sectionIds);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 } // срабатывает, когда 50% секции в зоне видимости
+    );
+
+    // Наблюдаем за всеми секциями
+    sectionIds.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      // Очистка наблюдателей при размонтировании
+      observer.disconnect();
+    };
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  return (
+    <div className={clsx('navBar', className)}>
+      {sections.map((id) => (
+        <Button
+          key={id}
+          text={id}
+          status={id === activeSection ? "active" : "default"}
+          onClick={() => scrollToSection(id)}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default NavBar;

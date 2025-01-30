@@ -1,22 +1,24 @@
 import Logo from "../../shared/assets/icons/logo";
 import styles from "./styles.module.css";
 import { NavLink } from "react-router-dom";
+import NavBar from "../../features/NavBar";
 
 const index = () => {
   return (
     <header className={styles.header}>
-      <NavLink
-       draggable={false}
-       to="/"
-       className={({ isActive }) =>
-        isActive ? styles.activeLink : ""
-      }
-       >
-        {({ isActive }) => (
-          <Logo fill={isActive ? "#FFFFFF" : "#988DB9"} />
-        )}
-      </NavLink>
-      <nav className={styles.nav}>
+      <div className={styles.upper_header}>
+        <NavLink
+        draggable={false}
+        to="/"
+        className={({ isActive }) =>
+          isActive ? styles.activeLink : ""
+        }
+        >
+          {({ isActive }) => (
+            <Logo fill={isActive ? "#FFFFFF" : "#988DB9"} />
+          )}
+        </NavLink>
+        <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li>
             <NavLink 
@@ -53,6 +55,11 @@ const index = () => {
           </li>
         </ul>
       </nav>
+      </div>
+      <div className={styles.lower_header}>
+        <NavBar></NavBar>
+      </div>
+
     </header>
   );
 };

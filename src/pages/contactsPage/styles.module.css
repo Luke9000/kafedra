@@ -1,29 +1,70 @@
-.firstSection {
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-  justify-content: center;
-  align-items: center;
-  @media (min-width:768px) {
-    padding-top: 25vh;
-    flex-direction: row;
-    gap: 5vw;
-  }
-}
 
 .s_2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10vw;
+  @media (min-width:768px) {
+    flex-direction: row;
+  }
 }
 
 .s_2__block {
-  width: 25vw;
+  
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 1vh;
+  @media (min-width:768px) {
+    gap: 3vh;
+  }
 }
 
 .contacts_list {
-
+  display: flex;
+  flex-direction:column;
+  gap: 2vh;
+  @media (min-width:768px) {
+    gap: 3vh;
+    flex-direction: column;
+  }
+  
 }
+
+.text_s1 {
+  width: 30vw;
+  display: flex;
+  gap: 3vh;
+  flex-direction: column;
+}
+
+.mapWrapper {
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
+  height:90%;
+  width:90%;
+  @media (min-width:768px) {
+    height:90%;
+    width:90%;
+  }
+}
+
+.cabsLabs {
+  display: flex;
+  flex-direction: column;
+  gap:2vh;
+  @media (min-width:768px) {
+    flex-direction: row;
+    gap:5vw;
+  }
+}
+
+.innerCabs {
+  display: flex;
+  flex-direction: column;
+  gap:3vh;
+  @media (min-width:768px) {
+    width:40vw;
+    gap:5vh;
+    flex-direction: column;
+  }
+}
+

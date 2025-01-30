@@ -1,6 +1,4 @@
 footer {
-
-    background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0vh;
     left: 0vw;
@@ -12,13 +10,13 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: rgba(255, 255, 255, 0.75);
+    /* background-color: rgba(255, 255, 255, 0.75); */
     @media (min-width:768px) { 
         display: none;
     }
       
 
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
 }
 
 .nav {
@@ -44,3 +42,17 @@ footer {
 li {
     list-style: none;
 }
+
+
+.link {
+flex: 1;
+display: flex;
+align-items: center; 
+justify-content: center;
+}
+      
+.active {
+    background-color: var(--accent-color-main);
+    color: white;
+    fill: white;
+  }

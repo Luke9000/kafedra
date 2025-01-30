@@ -1,7 +1,5 @@
 
 import Layout from '../../app/layouts/DashboardLayout';
-import { SectionNavigator } from '../../features/fullScreenNav/sectionNavigator';
-import { useScrollNavigation } from '../../features/fullScreenNav/useScrollNavigation';
 import DownloadIcon from "../../shared/assets/icons/svg-raw/Download.svg?react";
 import LinkIcon from "../../shared/assets/icons/svg-raw/Link.svg?react";
 import styles from './styles.module.css';
@@ -9,39 +7,22 @@ import styles from './styles.module.css';
 
 const InfoPage = () => {
   const sections = ['Расписание', 'Дипломная работа', 'Полезные ссылки'];
-  const { containerRef, activeSection, scrollToSection } = useScrollNavigation({ sections });
 
 
   return (
     <Layout>
-      
-    
-      {/* <Header></Header> */}
-      <SectionNavigator
-        sections={sections}
-        activeSection={activeSection}
-        onNavigate={scrollToSection}
-      />
+
        
-      <div className={styles.sections} ref={containerRef}>
-      
-      {/* <Notification className='notif' withBorder color="grape" radius="lg" title="">
-            Оставаясь на сайте вы соглашаетесь с условиями пользовательского соглашения
-          </Notification> */}
-        {/* {sections.map((_, index) => (
-          <section className={styles.section} key={index}>
-            <Carousel data = {data} />
-          </section>
-        ))} */}
-        <section className={styles.section}>
+      <div className={styles.sections} >
+        <section id='Расписание' className={styles.section}>
         <div className={styles.flexRow}>
             
             <div className={styles.flexCol}>
               <div className={styles.text}>
-                <h3>Общее расписание</h3>
-                <p>Расписание предметов групп</p>
+                <h2>Общее расписание</h2>
+                <small>Расписание предметов групп</small>
               </div>
-              <div className={styles.filler2}></div>
+              <div className={styles.filler}></div>
               <div className={styles.IconWrapper} >
                 <a target="_blank" rel="noopener noreferrer" href='https://sutd.ru/upload/raspisanie/raspisanie_o_iita_24_25.xlsx'>
                 <DownloadIcon/>
@@ -51,10 +32,10 @@ const InfoPage = () => {
   
             <div className={styles.flexCol}>
               <div className={styles.text}>
-                <h3>Кафедральное расписание</h3>
-                <p>Расписание предметов кафедры</p>
+                <h2>Кафедральное расписание</h2>
+                <small>Расписание предметов кафедры</small>
               </div>  
-              <div className={styles.filler2}></div>
+              <div className={styles.filler}></div>
               <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
               <DownloadIcon/>
               </div>
@@ -62,14 +43,14 @@ const InfoPage = () => {
   
            </div>
         </section>
-        <section className={styles.section}>
+        <section id='Дипломная работа' className={styles.section}>
 
           <div className={styles.flexRow}>
             
-          <div className={styles.flexCol}>
+          <div className={styles.flexCol3}>
             <div className={styles.text}>
-              <h3>Инструкция, титульные листы, раздаточные материалы</h3>
-              <p>Подробная инструкция и необходимые материалы для выполнения ВКР</p>
+              <h2>Инструкция, титульные листы, раздаточные материалы</h2>
+              <small>Подробная инструкция и необходимые материалы для выполнения ВКР</small>
             </div>
             <div className={styles.filler}></div>
             <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
@@ -77,10 +58,10 @@ const InfoPage = () => {
             </div>
           </div>
 
-          <div className={styles.flexCol}>
+          <div className={styles.flexCol3}>
             <div className={styles.text}>
-              <h3>Набор документов, необходимых для заказчика</h3>
-              <p>Если у вас есть заказчик, вы можете заполнить с ним данные документы и передать на их кафедру</p>
+              <h2>Набор документов, необходимых для заказчика</h2>
+              <small>Если у вас есть заказчик, вы можете заполнить с ним данные документы и передать на их кафедру</small>
             </div>
             <div className={styles.filler}></div>
             <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
@@ -88,10 +69,10 @@ const InfoPage = () => {
             </div>
           </div>
 
-          <div className={styles.flexCol}>
+          <div className={styles.flexCol3}>
             <div className={styles.text}>
-              <h3>Набор необходимых документов</h3>
-              <p>Документы необходимо заполнить, распечатать, подписать и отнести на кафедру</p>
+              <h2>Набор необходимых документов</h2>
+              <small>Документы необходимо заполнить, распечатать, подписать и отнести на кафедру</small>
             </div>  
             <div className={styles.filler}></div>
             <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
@@ -101,17 +82,17 @@ const InfoPage = () => {
 
          </div>
         </section>
-        <section  className={styles.section}>
 
 
+        <section id='Полезные ссылки' className={styles.section}>
         <div className={styles.flexRow2}>
 
         <a target="_blank" rel="noopener noreferrer" href='https://prouniver.ru/'>
           <div className={styles.flexCol2}>
               <div className={styles.text2}>
-                <h3>Информация для абитуриентов</h3>
-                <p>Программы обучения, проходные баллы,
-                стоимость обучения, вступительные испытания</p>
+                <h2>Информация для абитуриентов</h2>
+                <small>Программы обучения, проходные баллы,
+                стоимость обучения, вступительные испытания</small>
               </div>
               <div className={styles.filler}></div>
               <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
@@ -123,8 +104,8 @@ const InfoPage = () => {
             <a target="_blank" rel="noopener noreferrer" href='https://sutd.ru/'>
             <div className={styles.flexCol2}>
               <div className={styles.text2}>
-                <h3>Главный сайт ВУЗа</h3>
-                <p>Материалы образовательного учреждения, трудоустройство, сотрудничество, информация для иностранцев</p>
+                <h2>Главный сайт ВУЗа</h2>
+                <small>Материалы образовательного учреждения, трудоустройство, сотрудничество, информация для иностранцев</small>
               </div>
               <div className={styles.filler}></div>
               <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
@@ -136,8 +117,8 @@ const InfoPage = () => {
             <a target="_blank" rel="noopener noreferrer" href='https://portal.sutd.ru/stream/'>
               <div className={styles.flexCol2}>
                 <div className={styles.text2}>
-                  <h3>Личный кабинет</h3>
-                  <p>Образовательные материалы, общение с преподавателями, учебные новости, образовательная информация</p>
+                  <h2>Личный кабинет</h2>
+                  <small>Образовательные материалы, общение с преподавателями, учебные новости, образовательная информация</small>
                 </div>  
                 <div className={styles.filler}></div>
                 <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
