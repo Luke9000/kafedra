@@ -1,6 +1,6 @@
 import "./slider.css";
 
-const Slider = ({ images }) => {
+const Slider = ({ }) => {
  
 
   return (

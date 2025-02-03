@@ -51,8 +51,9 @@
     scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;
   }
-/*SHADOW
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+/*  SHADOW/BORDER
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+border: 0.1rem solid var(--text-color-regular); 
 
 */
   html {
@@ -239,4 +240,14 @@ a:hover {
 .textCall:hover{
   font-size: 0.8rem;
   border: 1px solid var(--text-color-bright);
+}
+
+.ending {
+  width: 100%;
+  height:20vh;
+  @media (min-width:768px) {
+    height:10vh;
+    
+  }
+  
 }

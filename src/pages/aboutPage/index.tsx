@@ -1,23 +1,17 @@
 
 import Layout from '../../app/layouts/DashboardLayout';
-import { teachers } from '../../entities/teachers';
-import SimpleVerticalSlider from '../../widgets/SimpleVerticalSlider';
+// import { teachers } from '../../entities/teachers';
 import Table from '../../widgets/Table';
 import styles from './styles.module.css';
+import ES from '../../widgets/EntityShowcase'
 
 const AboutPage = () => {
 
   return (
     <Layout>
     <>
-      {/* <Header></Header> */}
       <div className={styles.sections}>
       
-        {/* {sections.map((_, index) => (
-          <section className={styles.section} key={index}>
-            <Carousel data = {data} />
-          </section>
-        ))} */}
         <section id='Образовательные траектории' className={styles.section}>
           <div className={styles.ColumnBig}>
 
@@ -51,8 +45,9 @@ const AboutPage = () => {
         <Table></Table>
         </section>
         <section id='Преподаватели' className={styles.section}>
-          <SimpleVerticalSlider elements={teachers}></SimpleVerticalSlider> 
+          <ES></ES>
         </section>
+        <div className='ending'></div>
       </div>
       
     </>

@@ -1,8 +1,8 @@
-import t1 from '../shared/assets/images/teachers/1x.png';
-import t2 from '../shared/assets/images/teachers/2x.png';
-import t3 from '../shared/assets/images/teachers/3x.png';
-import t4 from '../shared/assets/images/teachers/4x.png';
-import t5 from '../shared/assets/images/teachers/5x.png';
+import t1 from '../shared/assets/images/teachers/1x.jpg';
+import t2 from '../shared/assets/images/teachers/2x.jpg';
+import t3 from '../shared/assets/images/teachers/3x.jpg';
+import t4 from '../shared/assets/images/teachers/4x.jpg';
+import t5 from '../shared/assets/images/teachers/5x.jpg';
 
 
 export const teachers = [

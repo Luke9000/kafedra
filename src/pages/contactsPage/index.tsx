@@ -5,8 +5,6 @@ import clsx from 'clsx';
 
 
 const ContactsPage = () => {
-  const sections = ['Адрес', 'Обратная связь'];
-
 
   return (
     <Layout>

@@ -3,11 +3,9 @@ import Layout from '../../app/layouts/DashboardLayout';
 import DownloadIcon from "../../shared/assets/icons/svg-raw/Download.svg?react";
 import LinkIcon from "../../shared/assets/icons/svg-raw/Link.svg?react";
 import styles from './styles.module.css';
-
+import WeekParity from '../../widgets/weekParity';
 
 const InfoPage = () => {
-  const sections = ['Расписание', 'Дипломная работа', 'Полезные ссылки'];
-
 
   return (
     <Layout>
@@ -42,6 +40,7 @@ const InfoPage = () => {
             </div>
   
            </div>
+           <WeekParity></WeekParity>
         </section>
         <section id='Дипломная работа' className={styles.section}>
 

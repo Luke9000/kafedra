@@ -17,7 +17,7 @@ export default function DashboardLayout({ children}:Props ) {
         {children}
       </main>
       <Footer></Footer>
-      <div className={styles.enging}></div>
+      
     </div>
 
   );
