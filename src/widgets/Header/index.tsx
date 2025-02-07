@@ -34,7 +34,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Новости
+              НОВОСТИ
             </NavLink>
           </li>
           <li>
@@ -45,7 +45,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Работы студентов
+              РАБОТЫ СТУДЕНТОВ
             </NavLink>
           </li>
           <li>
@@ -56,7 +56,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Карта этажа
+              ИНТЕРАКТИВНАЯ КАРТА
             </NavLink>
           </li>
           <li>
@@ -67,7 +67,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Расписание
+              РАСПИСАНИЕ
             </NavLink>
           </li>
           <li>
@@ -78,7 +78,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Материалы ВКР
+              ВКР
             </NavLink>
           </li>
         </ul>

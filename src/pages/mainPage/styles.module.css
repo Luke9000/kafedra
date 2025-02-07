@@ -27,3 +27,61 @@
 .left5vw {
   margin-left: 5vw;
 }
+
+.fullScreen {
+
+  min-height: 80vh;
+}
+
+.parallax {
+  /* background: linear-gradient(rgba(255, 255, 255, 0.758), rgba(255, 255, 255, 0.676)), 
+              url("../../shared/assets/images/backgrounds/pattern01.svg");
+  
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 10vmax 20vmax; */
+  background-color: var(--background-color-main);
+  min-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.blockLeft {
+  background-color: var(--text-color-bright);
+  color: var(--text-color-opposite) ;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  
+}
+
+.blockLeft h3.special {
+  color: var(--text-color-opposite);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.blockRight {
+  background-color: var(--background-color-main);
+  color: var(--text-color-bright) ;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  
+}
+
+.blockRight h2.special {
+  color: var(--text-color-bright);
+  font-size: 1.7rem;
+  text-align: center;
+}
+

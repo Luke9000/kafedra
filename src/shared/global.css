@@ -5,6 +5,7 @@
     --background-color-main: #ffffff;
     --background-color-2: #F1F1F1;
     --background-color-3: #F1ECFF;
+    --background-color-4: #FFEDEC;
     --accent-color-main: #A694FF;
     /* --accent-color-main: #8291FF; */
     --text-color-dull: #988DB9;
@@ -41,8 +42,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
   }
 
   html {
@@ -120,13 +119,21 @@
   section {
     /* border-top: var(--border-default); */
     background-color: var(--background-color-3);
-    padding-bottom: 0vmax;
-    padding-top: 0vmax;
+    padding-bottom: 5vmax;
+    padding-top: 0.1rem;
     display: block;
-  width: 100%;
-  height: auto;
+    
   }
 
+  section:nth-of-type(2n)
+  {
+    background-color: var(--background-color-3);
+  }
+
+  section:nth-of-type(3n)
+  {
+    background-color: var(--background-color-main);
+  }
   
 h3 {
   font-size: 1.2rem;
@@ -155,7 +162,7 @@ h2 {
 }
 
 h1 {
-  margin-top: 10vmax;
+  margin-top: 6vmax;
   margin-bottom: 7vmax;
   font-size: 1.4rem;
   font-family: var(--font-family-accent);
@@ -228,15 +235,25 @@ article {
 
 
 a {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: bold;
   color: var(--text-color-regular);
   list-style: none;
   text-decoration: none;
   border-radius: 5px;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
+  text-align: center;
   /* background-color: rgba(255, 255, 255, 0.85); */
+  @media (min-width:1350px) {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+li {
+  text-align: center;
+  
 }
 
 a:hover {
