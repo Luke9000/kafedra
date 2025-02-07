@@ -12,7 +12,7 @@ const InfoPage = () => {
 
        
       <div className={styles.sections} >
-        <section id='Расписание' className={styles.section}>
+        <section id='Расписание'>
         <div className={styles.flexRow}>
             
             <div className={styles.flexCol}>
@@ -34,15 +34,17 @@ const InfoPage = () => {
                 <small>Расписание предметов кафедры</small>
               </div>  
               <div className={styles.filler}></div>
-              <div className={styles.IconWrapper} onClick={(event) => event.preventDefault()}>
-              <DownloadIcon/>
+              <div className={styles.IconWrapper} >
+                <a target="_blank" rel="noopener noreferrer" href='https://sutd.ru/upload/raspisanie/raspisanie_o_iita_24_25.xlsx'>
+                <DownloadIcon/>
+                </a>
               </div>
             </div>
   
            </div>
            <WeekParity></WeekParity>
         </section>
-        <section id='Дипломная работа' className={styles.section}>
+        <section id='Дипломная работа'>
 
           <div className={styles.flexRow}>
             
@@ -83,7 +85,7 @@ const InfoPage = () => {
         </section>
 
 
-        <section id='Полезные ссылки' className={styles.section}>
+        <section id='Полезные ссылки'>
         <div className={styles.flexRow2}>
 
         <a target="_blank" rel="noopener noreferrer" href='https://prouniver.ru/'>

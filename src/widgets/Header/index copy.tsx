@@ -1,28 +1,26 @@
 import Logo from "../../shared/assets/icons/logo";
 import styles from "./styles.module.css";
 import { NavLink } from "react-router-dom";
+import NavBar from "../../features/NavBar";
+
 const index = () => {
   return (
     <header className={styles.header}>
-        
+ 
         <NavLink
         draggable={false}
         to="/kafedra"
-        end
         className={({ isActive }) =>
-          
           isActive ? styles.activeLink : ""
         }
         >
-          {({ isActive }) => {
-    const rootStyles = getComputedStyle(document.documentElement);
-    const activeColor = rootStyles.getPropertyValue("--text-color-bright").trim();
-    const defaultColor = rootStyles.getPropertyValue("--logo-color-dark").trim();
-
-    return <Logo fill={isActive ? activeColor : defaultColor} />;
-  }}
+          {({ isActive }) => (
+            <Logo fill={isActive ? "#FFFFFF" : "#988DB9"} />
+          )}
         </NavLink>
 
+        <NavBar></NavBar>
+        
         <nav className={styles.nav}>
         
         <ul className={styles.ul}>
@@ -34,7 +32,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Новости
+              О Кафедре
             </NavLink>
           </li>
           <li>
@@ -45,7 +43,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Работы студентов
+              Информация
             </NavLink>
           </li>
           <li>
@@ -56,29 +54,7 @@ const index = () => {
                 isActive ? styles.activeLink : ""
               }
             >
-              Карта этажа
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              draggable={false}
-              to="/kafedra/test2"
-              className={({ isActive }) =>
-                isActive ? styles.activeLink : ""
-              }
-            >
-              Расписание
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              draggable={false}
-              to="/kafedra/test1"
-              className={({ isActive }) =>
-                isActive ? styles.activeLink : ""
-              }
-            >
-              Материалы ВКР
+              Контакты
             </NavLink>
           </li>
         </ul>

@@ -1,0 +1,49 @@
+
+
+.ColumnInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    flex-direction: column; 
+    gap:1.5vh;
+    @media (min-width:768px) {
+        width: 30vw;
+        flex-direction: column;
+        gap:2vh;
+    }
+}
+
+.RowInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+    @media (min-width:768px) {
+        
+        flex-direction: row;
+    }
+}
+
+.ColumnBig {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items: flex-start;
+    margin-left: 5vmax;
+    gap: 2vh;
+    @media (min-width:768px) {
+        gap: 10vh;
+        margin-left: 15vmax;
+    }
+}
+
+.ColumnInfo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    gap:1.5vh;
+    @media (min-width:768px) {
+       width: 50vw;
+       gap:2vh;
+    }
+}

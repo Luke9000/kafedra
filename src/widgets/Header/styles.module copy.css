@@ -52,8 +52,8 @@ text-decoration: none;
 }
 
 
+
 .activeLink {
-  /* background-color: var(--accent-color-main); */
-  /* color: white; */
-  color: var(--text-color-bright);
+  background-color: var(--accent-color-main);
+  color: white;
 }

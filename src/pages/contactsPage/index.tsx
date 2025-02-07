@@ -2,6 +2,7 @@ import Layout from '../../app/layouts/DashboardLayout';
 import styles from './styles.module.css';
 import Map from '../../widgets/Map'
 import clsx from 'clsx';
+import FloorPlan from '../../widgets/FloorPlan';
 
 
 const ContactsPage = () => {
@@ -13,14 +14,15 @@ const ContactsPage = () => {
       
 
         <section id='Адрес'>
-          
-            <div className={styles.mapWrapper}>
-          <Map></Map>
+          <div className={styles.mapContainer}>
+              <div className={styles.mapWrapper}>
+                <Map></Map>
+              </div>
+            <p>Вознесенский проспект <strong>44 - 46</strong></p>
           </div>
-         
         </section>
         <section id='Кабинеты и лаборатории'>
-          <div className={styles.cabsLabs}>
+          {/* <div className={styles.cabsLabs}>
             <div className={styles.innerCabs}>
             <p><strong>Кабинеты</strong>: 451, 453, 454, 455, 464, 465</p>
             <p><strong>Учебные аудитории</strong>: 452, 459, 463, 466, 484, 485</p>
@@ -37,8 +39,8 @@ const ContactsPage = () => {
                 <p><strong>Лаборатория</strong> мультимедийных технологий</p>
                 
               </div>
-          </div>
-
+          </div> */}
+          <FloorPlan></FloorPlan>
         </section>
         <section id='Обратная связь'>
         <div className={styles.s_2}>

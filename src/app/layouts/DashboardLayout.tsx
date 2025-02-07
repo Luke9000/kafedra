@@ -1,23 +1,19 @@
 import Header from '../../widgets/Header/index'
-import Footer from '../../widgets/Footer'
-import styles from './styles.module.css'
-
+import Toolbar from '../../widgets/Toolbar'
 
 interface Props {
     children?: React.ReactNode
 }
 
 export default function DashboardLayout({ children}:Props ) {
-  // const [theme, toggleTheme] = useThemeSwitcher();
 
   return (
     <div>
       <Header></Header>
-      <main className={styles.wrapper}>
+      <main>
         {children}
       </main>
-      <Footer></Footer>
-      
+      <Toolbar></Toolbar>
     </div>
 
   );

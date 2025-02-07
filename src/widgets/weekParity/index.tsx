@@ -29,8 +29,8 @@ const WeekParity: React.FC = () => {
     // Возвращаем четность недели
     return (currentWeekNumber % 2 === 0) === firstWeekEven ? "четная" : "нечетная";
   };
-
-  return <p>Сейчас <strong>{getWeekParity()}</strong> неделя</p>;
+  const weekParity = getWeekParity();
+  return <p>Сейчас <strong>{weekParity}</strong> неделя ({weekParity === "нечетная"? 'числитель':'знаменатель'}) {} </p>;
 };
 
 export default WeekParity;
