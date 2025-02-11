@@ -51,7 +51,7 @@ const index = () => {
           <li>
             <NavLink
               draggable={false}
-              to="/kafedra/contacts"
+              to="/kafedra/map"
               className={({ isActive }) =>
                 isActive ? styles.activeLink : ""
               }

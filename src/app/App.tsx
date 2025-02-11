@@ -3,6 +3,7 @@ import MainPage from '../pages/mainPage'
 import AboutPage from '../pages/aboutPage'
 import InfoPage from '../pages/infoPage'
 import ContactsPage from '../pages/contactsPage'
+import Map from '../pages/mapPage'
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 const ScrollToTop: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Route path="/kafedra/about" element={<AboutPage />} />
           <Route path="/kafedra/info" element={<InfoPage />} />
           <Route path="*" element={<MainPage />} />
+          <Route path="/kafedra/map" element={<Map/>} />
         </Routes>
   </>
   );

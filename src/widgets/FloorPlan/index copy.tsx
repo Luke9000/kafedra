@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const offices = [
   { id: "452", x: 0.5, y: 0.5, width: 141, height: 62, number: "452" },
   { id: "453", x: 209.5, y: 0.5, width: 85, height: 62, number: "453" },
-  { id: "459", x: 209.5, y: 235.5, width: 85, height: 62, number: "459" },
-  { id: "462", x: 409.5, y: 135.5, width: 85, height: 62, number: "462" },
 ];
 
 const FloorPlan: React.FC = () => {
@@ -13,7 +11,7 @@ const FloorPlan: React.FC = () => {
 
   return (
     <>
-      <svg width="1295" height="631" viewBox="0 0 1305 731" fill="none">
+      <svg width="295" height="63" viewBox="0 0 305 73" fill="none">
         {offices.map(({ id, x, y, width, height, number }) => (
           <g
             key={id}
