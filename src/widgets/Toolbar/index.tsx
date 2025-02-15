@@ -4,11 +4,12 @@ import Contact from "../../shared/assets/icons/svg-raw/Contact.svg?react";
 import Info from "../../shared/assets/icons/svg-raw/Info.svg?react";
 import LogoClean from "../../shared/assets/icons/svg-raw/Logo-clean.svg?react";
 import styles from "./styles.module.css";
+import clsx from "clsx";
 
 const index = () => {
      const location = useLocation();
   return (  
-     <footer className={styles.wrapper}>
+     <div className={clsx(styles.wrapper, styles.toolbar)}>
      <nav className={styles.nav}>
        <ul className={styles.ul}>
          {[
@@ -28,7 +29,7 @@ const index = () => {
          ))}
        </ul>
      </nav>
-   </footer>
+   </div>
   )
 }
 

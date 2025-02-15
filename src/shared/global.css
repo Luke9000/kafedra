@@ -14,6 +14,7 @@
   --text-color-bright: #680aff;
   --text-color-opposite: #ffffff;
   --logo-color-dark: #1f1440;
+  --text-color-dull-2:#D4D4D4;
 
   /* FONTS */
   --font-size-big: 32px;
@@ -33,6 +34,7 @@
   --spacing-sm: 20px;
 
   --border-default: 0.02rem solid var(--text-color-regular);
+  --border-opposite: 0.02rem solid var(--text-color-opposite);
   --transition-default: all 0.3s ease-in-out;
 }
 
@@ -88,9 +90,7 @@ html {
     /* padding: 0rem 1rem; */
     font-size: var(--font-size-big);
   }
-}
 
-main {
   height: 100vh;
   width: 100%;
   display: block;
@@ -98,6 +98,10 @@ main {
   background-color: transparent;
   /* fixit! */
   overflow-x: hidden;
+}
+
+main {
+
 }
 /* background-color:indianred; */
 /* 
@@ -140,6 +144,17 @@ h3 {
   font-family: var(--font-family-regular);
   font-weight: var(--font-weight-bold);
   color: var(--text-color-regular);
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weight-extraLight);
+  color: var(--text-color-dull-2);
   @media (min-width: 768px) {
     font-size: 1rem;
     line-height: 1.3rem;
@@ -199,6 +214,14 @@ p.alt {
   color: #d8d8d8;
 }
 
+p.alt2 {
+  color: var(--text-color-opposite);
+  font-size: 1.3rem;
+  @media (min-width: 768px) {
+    font-size: 0.9rem;
+  }
+}
+
 /*subtext*/
 small {
   font-family: var(--font-family-regular);
@@ -208,6 +231,11 @@ small {
   @media (min-width: 768px) {
     font-size: 0.7rem;
   }
+}
+
+small.alt {
+  color: var(--text-color-dull-2);
+
 }
 
 /*important text*/
@@ -244,6 +272,7 @@ article {
 }
 
 a {
+  cursor: pointer;
   font-size: 0.6rem;
   font-weight: bold;
   color: var(--text-color-regular);
@@ -260,6 +289,11 @@ a {
   }
   border: var(--border-default);
   border-color: transparent;
+}
+
+a.left {
+  text-align: left;
+  width: fit-content;
 }
 
 li {
@@ -282,6 +316,7 @@ a:hover {
 .mobileHidden {
   border: none;
 }
+
 .wideScreenHidden {
   @media (min-width: 1201px) {
     display: none;
@@ -317,5 +352,7 @@ a:hover {
 }
 
 hr {
+  
   width: 100vw;
+  height: 0.02rem;
 }

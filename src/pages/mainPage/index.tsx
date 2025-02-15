@@ -34,12 +34,11 @@ const MainPage = () => {
         <StudyRoute></StudyRoute>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className={styles.mapWrapper}>
           <hr></hr>
-        {/* <Map></Map> */}
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

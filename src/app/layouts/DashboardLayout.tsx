@@ -1,3 +1,4 @@
+import Footer from '../../widgets/Footer';
 import Header from '../../widgets/Header/index'
 import Toolbar from '../../widgets/Toolbar'
 
@@ -14,6 +15,7 @@ export default function DashboardLayout({ children}:Props ) {
       <main>
         {children}
       </main>
+      <Footer></Footer>
       <Toolbar></Toolbar>
     </div>
 
