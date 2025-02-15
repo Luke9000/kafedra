@@ -1,6 +1,7 @@
-import DashboardLayout from '../../app/layouts/DashboardLayout'
-import FloorPlan from '../../widgets/FloorPlan'
-import styles from './styles.module.css'
+import DashboardLayout from "../../app/layouts/DashboardLayout";
+import FloorPlan from "../../widgets/FloorPlan";
+import styles from "./styles.module.css";
+
 const index = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const index = () => {
         </div>
       </DashboardLayout>
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;

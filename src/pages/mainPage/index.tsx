@@ -3,7 +3,8 @@ import Layout from '../../app/layouts/DashboardLayout';
 import styles from './styles.module.css';
 import StudyRoute from '../../app/layouts/StudyRoute';
 import EntityShowcase from '../../widgets/EntityShowcase';
-
+import clsx from 'clsx';
+import Map from '../../widgets/Map'
 
 const MainPage = () => {
 
@@ -14,7 +15,7 @@ const MainPage = () => {
         <p className={styles.heroText}>Кафедра цифровых и аддитивных технологий СПБГУПТД занимается разработкой и внедрением передовых решений в области информационных технологий и цифровизации. Наши программы направлены на подготовку специалистов, способных создавать инновационные цифровые продукты и управлять ими.
         </p>
       </div>
-      <section>
+      <section className='section_border'>
       <h1 className={styles.left5vw}>СФЕРЫ ДЕЯТЕЛЬНОСТИ</h1>
       <Table></Table>
       </section>
@@ -29,13 +30,15 @@ const MainPage = () => {
       </div>
       <section>
         <div className={styles.fullScreen}>
-      <h1 className={styles.left5vw}>НАПРАВЛЕНИЯ ПОДГОТОВКИ</h1>
+      <h1 className={clsx(styles.left5vw,'alt')}>НАПРАВЛЕНИЯ ПОДГОТОВКИ</h1>
         <StudyRoute></StudyRoute>
         </div>
       </section>
       <section>
-        <h1 className={styles.left5vw}>ПРЕПОДАВАТЕЛИ</h1>
-        <EntityShowcase></EntityShowcase>
+        <div className={styles.mapWrapper}>
+          <hr></hr>
+        {/* <Map></Map> */}
+        </div>
       </section>
     </Layout>
   );

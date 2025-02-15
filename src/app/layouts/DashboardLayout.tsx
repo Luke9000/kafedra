@@ -1,6 +1,7 @@
 import Header from '../../widgets/Header/index'
 import Toolbar from '../../widgets/Toolbar'
 
+
 interface Props {
     children?: React.ReactNode
 }

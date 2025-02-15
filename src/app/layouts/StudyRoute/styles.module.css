@@ -1,4 +1,7 @@
-
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
 
 .ColumnInfo {
     display: flex;
@@ -14,10 +17,11 @@
 }
 
 .RowInfo {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5vw;
+    justify-content: space-evenly;
+    gap: 3vw;
     @media (min-width:768px) {
         
         flex-direction: row;
@@ -25,15 +29,16 @@
 }
 
 .ColumnBig {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;    
-    align-items: flex-start;
-    margin-left: 5vmax;
+    justify-content: center;    
+    align-items: center;
+    /* margin-left: 5vmax; */
     gap: 2vh;
     @media (min-width:768px) {
-        gap: 10vh;
-        margin-left: 15vmax;
+        gap: 14vh;
+        /* margin-left: 12vmax; */
     }
 }
 
@@ -46,4 +51,14 @@
        width: 50vw;
        gap:2vh;
     }
+}
+
+.extraMargin {
+        margin-top: 3vh;
+    
+
+    @media (min-width:768px) {
+        margin-bottom: 3vh;
+    }
+    
 }

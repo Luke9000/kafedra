@@ -1,6 +1,6 @@
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color-1);
     /* background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.0)); */
     /* padding:  1.0rem 1.5rem ; */
     position:fixed;
@@ -25,6 +25,8 @@
     @media (min-width: 1200px) {
       gap : 1vw;
     }
+    border: var(--border-default);
+    border-color: var(--text-color-regular);
     
 }
 
@@ -53,8 +55,29 @@ text-decoration: none;
 }
 
 
-.activeLink {
-  /* background-color: var(--accent-color-main); */
-  /* color: white; */
+.activeLink:not(.logo) {
   color: var(--text-color-bright);
+  border-color: var(--accent-color-main);
 }
+
+
+.logo {
+  transition: var(--transition-default) ;
+}
+
+.logo:hover {
+  fill: var(--background-color-3);
+  border: none;
+}
+
+.activeLink:hover {
+  color: var(--text-color-bright);
+  fill: var(--text-color-bright);
+}
+
+.mobileHidden.activeLink{
+  border: none !important;
+  border-color: transparent !important;
+}
+
+
