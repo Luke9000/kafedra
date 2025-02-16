@@ -42,7 +42,7 @@ const index = () => {
 
             <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
               <p className="alt2">iita.dekanat@mail.ru</p>
-              <small className="alt">Адрес электронной почты</small>
+              <small className="alt">Адрес электронной почты2</small>
             </a>
           </div>
         </div>
