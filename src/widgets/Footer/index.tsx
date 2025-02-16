@@ -9,16 +9,19 @@ const index = () => {
           <h4>КАФЕДРА</h4>
 
           <div className={styles.borderBlock}>
-            <p className="alt2">Вознесенский проспект 46 этаж 4</p>
-
-            <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
-              <p className="alt2">812421421214</p>
-              <small className="alt">Телефон Петрова</small>
+          <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
+              <p className="alt2">Вознесенский пр., д. 46, каб. 452-463</p>
+              <small className="alt">Адрес</small>
             </a>
 
             <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
-              <p className="alt2">812421421214</p>
-              <small className="alt">Телефон Петрова</small>
+              <p className="alt2">570-40-64</p>
+              <small className="alt">Телефон</small>
+            </a>
+
+            <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
+              <p className="alt2">iskd@sutd.ru</p>
+              <small className="alt">Адрес электронной почты</small>
             </a>
           </div>
         </div>
@@ -27,16 +30,19 @@ const index = () => {
           <h4>ДИРЕКТОРАТ ИИТА</h4>
 
           <div className={styles.borderBlock}>
-            <p className="alt2">Вознесенский проспект 46 этаж 4</p>
-
-            <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
-              <p className="alt2">812421421214</p>
-              <small className="alt">Телефон Петрова</small>
+          <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
+              <p className="alt2">ул. Большая Морская, д. 18, каб. 425</p>
+              <small className="alt">Адрес</small>
             </a>
 
             <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
-              <p className="alt2">812421421214</p>
-              <small className="alt">Телефон Петрова</small>
+              <p className="alt2">315-12-77</p>
+              <small className="alt">Телефон</small>
+            </a>
+
+            <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
+              <p className="alt2">iita.dekanat@mail.ru</p>
+              <small className="alt">Адрес электронной почты</small>
             </a>
           </div>
         </div>
