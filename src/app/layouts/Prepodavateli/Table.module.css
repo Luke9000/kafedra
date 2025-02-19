@@ -3,6 +3,7 @@
   height: auto;
   gap: 3vmax 2vmax;
   margin: -2vmax 0;
+  margin-bottom: 0;
   padding: 2vmax 2vmax;
   grid-template-columns: 1fr;
   min-width: 150px;
