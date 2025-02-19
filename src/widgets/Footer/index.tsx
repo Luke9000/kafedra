@@ -11,6 +11,7 @@ const index = () => {
           <div className={styles.borderBlock}>
           <a className={clsx(styles.phoneBlock, "left", styles.extraMargin)}>
               <p className="alt2">Вознесенский пр., д. 46, каб. 452-463</p>
+              <i className="fi fi-rr-envelope"></i>
               <small className="alt">Адрес</small>
             </a>
 
