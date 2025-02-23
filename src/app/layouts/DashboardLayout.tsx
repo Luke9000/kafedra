@@ -10,14 +10,14 @@ interface Props {
 export default function DashboardLayout({ children}:Props ) {
 
   return (
-    <div>
+    <>
       <Header></Header>
       <main>
         {children}
       </main>
       <Footer></Footer>
       <Toolbar></Toolbar>
-    </div>
+    </>
 
   );
 }

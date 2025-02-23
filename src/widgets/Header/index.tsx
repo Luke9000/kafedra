@@ -58,7 +58,7 @@ const index = () => {
           <li>
             <NavLink
               draggable={false}
-              to="/kafedra/info"
+              to="/kafedra/raboti_studentov"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
               РАБОТЫ СТУДЕНТОВ
@@ -67,7 +67,7 @@ const index = () => {
           <li>
             <NavLink
               draggable={false}
-              to="/kafedra/map"
+              to="/kafedra/karta"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
               ИНТЕРАКТИВНАЯ КАРТА
@@ -76,7 +76,7 @@ const index = () => {
           <li>
             <NavLink
               draggable={false}
-              to="/kafedra/test2"
+              to="/kafedra/raspisanie"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
               РАСПИСАНИЕ

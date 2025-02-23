@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import MainPage from "../pages/mainPage";
-import AboutPage from "../pages/aboutPage";
-import InfoPage from "../pages/infoPage";
-import ContactsPage from "../pages/contactsPage";
+import WorksPage from "../pages/worksPage";
 import Map from "../pages/mapPage";
 import { Routes, Route, useLocation } from "react-router-dom";
 import VkrPage from "../pages/vkrPage";
 import TeachersPage from "../pages/teachersPage";
+import ShedulePage from "../pages/shedulePage";
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -23,13 +22,13 @@ const App: React.FC = () => {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/kafedra/contacts" element={<ContactsPage />} />
-        <Route path="/kafedra/about" element={<AboutPage />} />
-        <Route path="/kafedra/info" element={<InfoPage />} />
+        <Route path="/kafedra/raboti_studentov" element={<WorksPage />} />
         <Route path="*" element={<MainPage />} />
-        <Route path="/kafedra/map" element={<Map />} />
+        <Route path="/kafedra/karta" element={<Map />} />
         <Route path="/kafedra/vkr" element={<VkrPage />} />
+        <Route path="/kafedra/raspisanie" element={<ShedulePage />} />
         <Route path="/kafedra/prepodavateli" element={<TeachersPage />} />
+        
       </Routes>
     </>
   );

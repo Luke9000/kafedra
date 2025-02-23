@@ -7,7 +7,8 @@ const index = () => {
     <div>
       <DashboardLayout>
         <div className={styles.wrapper}>
-          <FloorPlan></FloorPlan>
+          {/* <FloorPlan></FloorPlan> */}
+          <h1>СТРАНИЦА В РАЗРАБОТКЕ</h1>
         </div>
       </DashboardLayout>
     </div>
