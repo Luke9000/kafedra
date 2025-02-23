@@ -14,7 +14,7 @@
   --text-color-bright: #680aff;
   --text-color-opposite: #ffffff;
   --logo-color-dark: #1f1440;
-  --text-color-dull-2:#D4D4D4;
+  --text-color-dull-2: #d4d4d4;
 
   /* FONTS */
   --font-size-big: 32px;
@@ -37,6 +37,16 @@
   --border-default: 0.02rem solid var(--text-color-regular);
   --border-opposite: 0.02rem solid var(--text-color-opposite);
   --transition-default: all 0.3s ease-in-out;
+
+  --min-width: 300px;
+
+  --gradient-2: linear-gradient(
+    rgba(0, 0, 1, 0.039) 0%,
+    rgba(0, 0, 1, 0) 15%,
+    rgba(0, 0, 1, 0.151) 75%,
+    #00000053 90%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
 }
 
 * {
@@ -47,7 +57,7 @@
 
 html {
   scroll-behavior: smooth;
-  
+
   -webkit-overflow-scrolling: touch;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -55,8 +65,8 @@ html {
   background-color: transparent;
 
   ::-webkit-scrollbar {
-    width: 0.2rem; 
-
+    width: 0.2rem;
+    color: transparent;
   }
 
   /* Фон скроллбара */
@@ -65,15 +75,9 @@ html {
     border-radius: 4px;
   }
 
-  /* Ползунок (бегунок) */
   ::-webkit-scrollbar-thumb {
     background: var(--background-color-3);
     border-radius: 0.1rem;
-  }
-
-  /* При наведении */
-  ::-webkit-scrollbar-thumb:hover {
-    background: tra;
   }
 
   /*Mobile */
@@ -98,16 +102,20 @@ html {
   }
 
   height: 100vh;
+  min-width: var(--min-width);
+
   width: 100%;
   display: block;
-  overflow-y: overlay;
+  overflow-x: hiddent;
   background-color: transparent;
   /* fixit! */
   overflow-x: hidden;
+  @media (max-width: 300px) {
+    overflow-x: scroll;
+  }
 }
 
 main {
-
 }
 /* background-color:indianred; */
 /* 
@@ -245,7 +253,6 @@ small {
 
 small.alt {
   color: var(--text-color-dull-2);
-
 }
 
 /*important text*/
@@ -362,11 +369,9 @@ a:hover {
 }
 
 hr {
-  
   width: 100vw;
   height: 0.02rem;
 }
-
 
 /* <Route path="/kafedra/raboti_studentov" element={<WorksPage />} />
 <Route path="*" element={<MainPage />} />

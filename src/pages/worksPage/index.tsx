@@ -1,12 +1,12 @@
 import DashboardLayout from "../../app/layouts/DashboardLayout";
-import Prepodavateli from "../../app/layouts/Prepodavateli";
+import Works from "../../app/layouts/Works";
 import styles from "./styles.module.css";
 
 const index = () => {
   return (
     <DashboardLayout>
       <div className={styles.wrapper}>
-        <Prepodavateli></Prepodavateli>
+        <Works></Works>
       </div>
     </DashboardLayout>
   );

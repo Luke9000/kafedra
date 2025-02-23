@@ -1,0 +1,99 @@
+.container {
+  margin-top: 9vh;
+  padding: 4vh 2vw;
+  /* padding-bottom: 0; */
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+
+.heroText {
+  padding: 5vmin;
+  color: var(--text-color-opposite);
+  background-color: var(--text-color-bright);
+  height: 41vh;
+  line-height: 127%;
+  letter-spacing: 0.1rem;
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weight-extraLight);
+  /* font-size: 0.9rem; */
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 45vmax 1;
+}
+
+.block {
+  height: 41vh;
+  flex: 45vmax 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  padding: 2.5vmin 3vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  filter: saturate(0.1);
+  transition: var(--transition-default);
+}
+
+.blockSmall {
+  flex: calc(45vmax / 2 - 3vmin) 1;
+}
+
+.block:nth-of-type(1n) {
+  background: var(--gradient-2),
+    url(../../../shared/assets/images/works/1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.block:nth-of-type(2n) {
+  background: var(--gradient-2),
+    url(../../../shared/assets/images/works/2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.block:nth-of-type(3n) {
+  background: var(--gradient-2),
+    url(../../../shared/assets/images/works/3.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.block:nth-of-type(4n) {
+  background: var(--gradient-2),
+    url(../../../shared/assets/images/works/4.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.block:hover {
+  filter: saturate(1);
+}
+
+.smallLineHeight {
+  line-height: 90%;
+}
+
+.block small {
+  opacity: 0%;
+  transition: var(--transition-default);
+}
+
+.block p {
+  opacity: 0%;
+  transition: var(--transition-default);
+}
+
+
+.block:hover small {
+  opacity: 100%;
+}

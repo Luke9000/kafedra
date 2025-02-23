@@ -4,6 +4,7 @@
     left: 0vw;
     margin: 0px;
     padding: 0px;
+    min-width: var(--min-width);
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -11,7 +12,7 @@
     align-items: center;
     align-content: center;
     background-color: rgb(255, 255, 255);
-    @media (min-width:900px) { 
+    @media (min-width:1024px) { 
         display: none;
     }
     border: var(--border-default);

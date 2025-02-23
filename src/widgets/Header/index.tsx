@@ -10,7 +10,7 @@ const index = () => {
         draggable={false}
         to="/kafedra"
         end
-        className={({ isActive }) => clsx('mobileHidden', isActive && styles.activeLink)}
+        className={({ isActive }) => clsx(isActive && styles.activeLink,styles.logo)}
       >
         {({ isActive }) => {
           const rootStyles = getComputedStyle(document.documentElement);
@@ -25,24 +25,6 @@ const index = () => {
         }}
       </NavLink>
 
-      <NavLink
-        draggable={false}
-        to="/kafedra"
-        end
-        className={({ isActive }) => clsx('wideScreenHidden', isActive && styles.activeLink)}
-      >
-        {({ isActive }) => {
-          const rootStyles = getComputedStyle(document.documentElement);
-          const activeColor = rootStyles
-            .getPropertyValue("--text-color-bright")
-            .trim();
-          const defaultColor = rootStyles
-            .getPropertyValue("--logo-color-dark")
-            .trim();
-
-          return <LogoSmall className={clsx(styles.logo, isActive && styles.activeLink)} fill={isActive ? activeColor : defaultColor} />;
-        }}
-      </NavLink>
 
       <nav className={styles.nav}>
         <ul className={styles.ul}>
