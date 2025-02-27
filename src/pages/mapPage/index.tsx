@@ -1,5 +1,5 @@
 import DashboardLayout from "../../app/layouts/DashboardLayout";
-import FloorPlan from "../../widgets/FloorPlan";
+// import FloorPlan from "../../widgets/FloorPlan";
 import styles from "./styles.module.css";
 
 const index = () => {

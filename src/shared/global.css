@@ -106,9 +106,7 @@ html {
 
   width: 100%;
   display: block;
-  overflow-x: hiddent;
   background-color: transparent;
-  /* fixit! */
   overflow-x: hidden;
   @media (max-width: 300px) {
     overflow-x: scroll;
@@ -117,33 +115,13 @@ html {
 
 main {
 }
-/* background-color:indianred; */
-/* 
-  section {
-    
-    border-top: var(--border-default);
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5vmax 0;
-    width:100%;
-    min-height: 80vh;
-
-  } */
 
 section {
-  /* border-top: var(--border-default); */
   background-color: #ffffff;
   padding-bottom: 5vmax;
   padding-top: 0.1rem;
   display: block;
 }
-
-/* .section_border {
-    border: var(--border-default);
-    border-radius: 1rem;
-  } */
 
 section:nth-of-type(2n) {
   background-color: var(--text-color-bright);

@@ -1,8 +1,7 @@
 import Layout from '../../app/layouts/DashboardLayout';
-import styles from './styles.module.css';
-import Map from '../../widgets/Map'
-import clsx from 'clsx';
 import FloorPlan from '../../widgets/FloorPlan';
+import Map from '../../widgets/Map';
+import styles from './styles.module.css';
 
 
 const ContactsPage = () => {

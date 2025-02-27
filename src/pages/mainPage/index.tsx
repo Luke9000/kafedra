@@ -4,8 +4,13 @@ import StudyRoute from "../../app/layouts/StudyRoute";
 import Table from "../../widgets/Table";
 import styles from "./styles.module.css";
 import Hero from "../../app/layouts/Hero";
+import { useState } from "react";
+import { createPortal } from "react-dom";
+import Modal  from "../../widgets/Modal";
 
 const MainPage = () => {
+  // const [showModal, setShowModal] = useState(false);
+
   return (
     <Layout>
       <Hero></Hero>
@@ -29,6 +34,7 @@ const MainPage = () => {
           <StudyRoute></StudyRoute>
         </div>
       </section>
+     
     </Layout>
   );
 };

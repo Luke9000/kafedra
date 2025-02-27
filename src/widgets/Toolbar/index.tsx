@@ -1,13 +1,11 @@
+import clsx from "clsx";
 import { Link, useLocation } from "react-router-dom";
-import Contact from "../../shared/assets/icons/svg-raw/Contact.svg?react";
-import Info from "../../shared/assets/icons/svg-raw/Info.svg?react";
-import Works from "../../shared/assets/icons/svg-raw/Works.svg?react";
-import People from "../../shared/assets/icons/svg-raw/People.svg?react";
-import Scheme from "../../shared/assets/icons/svg-raw/Scheme.svg?react";
 import Calendar from "../../shared/assets/icons/svg-raw/Calendar.svg?react";
 import Graduate from "../../shared/assets/icons/svg-raw/Graduate.svg?react";
+import People from "../../shared/assets/icons/svg-raw/People.svg?react";
+import Scheme from "../../shared/assets/icons/svg-raw/Scheme.svg?react";
+import Works from "../../shared/assets/icons/svg-raw/Works.svg?react";
 import styles from "./styles.module.css";
-import clsx from "clsx";
 
 const index = () => {
      const location = useLocation();
@@ -27,7 +25,7 @@ const index = () => {
                className={`${styles.link} ${location.pathname === to ? styles.active : ""}`}
                to={to}
              >
-               <Icon fill={location.pathname === to ? "white" : "#201541"} />
+               <Icon className={styles.icon} fill={location.pathname === to ? "white" : "#201541"} />
              </Link>
            </li>
          ))}

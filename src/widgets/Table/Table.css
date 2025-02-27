@@ -1,15 +1,14 @@
-
 .grid {
   display: grid;
   height: auto;
   /* min-height: 80vh; */
-  gap:3vmax 2vmax;
+  gap: 3vmax 2vmax;
   margin: -2vmax 0;
   padding: 2vmax 2vmax;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   /* grid-gap: 1vmin; */
   @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   }
   border: var(--border-default);
   width: 90%;
@@ -24,7 +23,6 @@
   height: auto;
 }
 
-
 .grid-item {
   padding: 0.7rem;
   text-align: center;
@@ -36,17 +34,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-
 .grid-item:hover {
-  transform: scale(0.96); 
+  transform: scale(0.96);
   color: var(--text-color-opposite);
   background-color: var(--text-color-bright);
   cursor: pointer;
 }
-
 
 .grid-item:first-child {
   border-left: none;
@@ -56,4 +51,34 @@
 .grid-item:last-child {
   border-right: none;
   border-bottom: none;
+}
+
+.bigText {
+  font-size: 3rem;
+  line-height: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.tableModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0vmin;
+  margin-top: -3rem;
+
+}
+
+.tableModalText {
+  padding-right: 4rem;
+  line-height: 1.2rem;
+  font-size: 1.0rem;
+  @media (max-width: 768px) {
+    padding-right: 1rem;
+    line-height: 1.4rem;
+  }
 }

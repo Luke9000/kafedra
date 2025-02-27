@@ -1,5 +1,4 @@
 import DashboardLayout from "../../app/layouts/DashboardLayout";
-import Prepodavateli from "../../app/layouts/Prepodavateli";
 import styles from "./styles.module.css";
 
 const index = () => {
