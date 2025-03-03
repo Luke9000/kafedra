@@ -2,29 +2,29 @@
   background-color: var(--background-color-1);
   /* background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.0)); */
   /* padding:  1.0rem 1.5rem ; */
-  position: fixed;
+  position: sticky;
   left: 0px;
   top: 0vh;
   z-index: 9;
   font-family: var(--font-family-regular);
-  min-height: 70px;
+  min-height: 40px;
   min-width: var(--min-width);
-  width: 100vw;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   text-decoration: none;
-  gap: 3vh;
+  /* gap: 3vh; */
   display: flex;
   height: 10vh;
-  padding: 0.1rem 1rem;
-  @media (min-width: 768px) {
+  padding: 0.1rem 1.3vw;
+  /* @media (min-width: 768px) {
     gap: 1vw;
   }
   @media (min-width: 1200px) {
     gap: 1vw;
-  }
+  } */
   border: var(--border-default);
   border-color: var(--text-color-regular);
 }

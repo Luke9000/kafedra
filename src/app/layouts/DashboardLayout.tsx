@@ -16,7 +16,7 @@ export default function DashboardLayout({ children}:Props ) {
         {children}
       </main>
       <Footer></Footer>
-      <Toolbar></Toolbar>
+      {/* <Toolbar></Toolbar> */}
     </>
 
   );

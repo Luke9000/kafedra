@@ -3,7 +3,7 @@
   height: auto;
   /* min-height: 80vh; */
   gap: 3vmax 2vmax;
-  margin: -2vmax 0;
+  /* margin: -2vmax 0; */
   padding: 2vmax 2vmax;
   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   /* grid-gap: 1vmin; */
@@ -69,7 +69,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0vmin;
-  margin-top: -3rem;
 
 }
 

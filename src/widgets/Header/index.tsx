@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 import Logo from "../../shared/assets/icons/logo";
 import styles from "./styles.module.css";
+import Hamburger from "../Hamburger";
 const index = () => {
   return (
     <header className={styles.header}>
@@ -74,6 +75,7 @@ const index = () => {
           </li>
         </ul>
       </nav>
+      <Hamburger></Hamburger>
     </header>
   );
 };

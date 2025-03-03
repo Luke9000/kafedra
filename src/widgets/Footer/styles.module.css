@@ -12,13 +12,15 @@
 }
 
 .footerUpper {
-    padding: 5vmin 1rem 10vmin 1rem;
+    padding: 1rem;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     gap:5vmin;
-    flex: 40vw 1;
+    padding-bottom: 5vmax;
+    /* flex: 40vw 1; */
 }
 
 .datablock {
@@ -48,7 +50,7 @@
     gap:5vmin;
     @media (max-width:768px) {
         /* min-height: 20vh; */
-        margin-bottom: 11vh;
+        /* margin-bottom: 11vh; */
         flex-direction: column;
     }
 }

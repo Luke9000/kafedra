@@ -7,7 +7,7 @@ const index = () => {
       <div className={styles.ColumnBig}>
         <div className={styles.RowInfo}>
           <div className={styles.ColumnInfo}>
-            <h2 className={clsx('alt',styles.extraMargin)}>
+            <h2 className={'alt'}>
               <strong className="alt">4</strong> Профиля бакалавриата
             </h2>
             <p className="alt">Прикладная информатика в дизайне</p>

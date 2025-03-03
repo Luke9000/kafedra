@@ -8,6 +8,7 @@ import Email from "../../shared/assets/icons/svg-raw/Email.svg?react";
 const index = () => {
   return (
     <footer className={styles.footer}>
+      <h1 className="alt" style={{marginLeft:'5vw'}}>КОНТАКТЫ</h1>
       <div className={styles.footerUpper}>
         <div className={styles.datablock}>
           <h4>КАФЕДРА</h4>

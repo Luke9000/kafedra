@@ -30,9 +30,11 @@
   --font-family-accent: "NEUTRALFACE";
 
   /* TEMP */
-  --spacing-lg: 80px;
-  --spacing-md: 40px;
-  --spacing-sm: 20px;
+  --spacing-xl: 2.2rem;
+  --spacing-l: 1.5rem;
+  --spacing-m: 1rem;
+  --spacing-s: 0.4rem;
+  --spacing-xs: 0.2rem;
 
   --border-default: 0.02rem solid var(--text-color-regular);
   --border-opposite: 0.02rem solid var(--text-color-opposite);
@@ -73,6 +75,7 @@ html {
   ::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 4px;
+    
   }
 
   ::-webkit-scrollbar-thumb {
@@ -114,6 +117,7 @@ html {
 }
 
 main {
+  padding-top: var(--spacing-l);
 }
 
 section {
@@ -172,8 +176,8 @@ h2.alt {
 }
 
 h1 {
-  margin-top: 6vmax;
-  margin-bottom: 7vmax;
+  margin-top: 4vmax;
+  margin-bottom: 5vmax;
   font-size: 1.4rem;
   font-family: var(--font-family-accent);
   font-weight: var(--font-weight-bold);
@@ -347,7 +351,7 @@ a:hover {
 }
 
 hr {
-  width: 100vw;
+  width: 100%;
   height: 0.02rem;
 }
 

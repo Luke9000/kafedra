@@ -23,21 +23,12 @@ const index = () => {
           document.body
         )}
       <div className={styles.container}>
-        
-      <div className={styles.blockText}>
-          <p className="alt2">О кафедре</p>
-          <small className={clsx("alt", styles.smallLineHeight)}>
-          Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
-          разработкой и внедрением передовых решений в области информационных
-          технологий и цифровизации
-          </small>
-        </div>
-        {/* <p className={styles.heroText}>
+        <p className={styles.heroText}>
           Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
           разработкой и внедрением передовых решений в области информационных
           технологий и цифровизации. Наши программы направлены на подготовку
           специалистов, способных создавать инновационные цифровые продукты
-        </p> */}
+        </p>
 
         <div className={styles.block} onClick={() => openModal(SPO)}>
           <p className="alt2">Среднее профессиональное образование</p>
@@ -48,22 +39,30 @@ const index = () => {
         </div>
 
         <div className={styles.block} onClick={() => openModal(CK)}>
-          <p className="alt2">Мероприятия</p>
-          <small className={clsx("alt", styles.smallLineHeight)}>
-            Более 2000 студентов различных направлений со всего университета
-            осваивают IT направления
-          </small>
-        </div>
-
-        <div className={styles.block} onClick={() => openModal(CK)}>
           <p className="alt2">Проект цифровая кафедра</p>
           <small className={clsx("alt", styles.smallLineHeight)}>
             Более 2000 студентов различных направлений со всего университета
             осваивают IT направления
           </small>
         </div>
-
-
+        <div
+          className={clsx(styles.block, styles.blockSmall)}
+          onClick={() => openModal(Events)}
+        >
+          <p className="alt2">Выступления</p>
+          <small className={clsx("alt", styles.smallLineHeight)}>
+            Участие в региональных и международных конкурсах
+          </small>
+        </div>
+        <div
+          className={clsx(styles.block, styles.blockSmall)}
+          onClick={() => openModal(Projects)}
+        >
+          <p className="alt2">Проекты</p>
+          <small className={clsx("alt", styles.smallLineHeight)}>
+            Показы, хакатоны, интенсивы, митапы и многое другое
+          </small>
+        </div>
       </div>
     </>
   );

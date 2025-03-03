@@ -14,6 +14,17 @@ const index = () => {
     setShowModal(true);
   };
 
+    const [query, setQuery] = useState("");
+  
+    const filteredWorks = works.filter(
+      (item) =>
+        item.author.toLowerCase().includes(query.toLowerCase()) ||
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.year.toLowerCase().includes(query.toLowerCase()) ||
+        item.type.toLowerCase().includes(query.toLowerCase()) 
+    );
+  
+
   return (
     <>
       {showModal &&
@@ -21,8 +32,23 @@ const index = () => {
           <Modal onClose={() => setShowModal(false)}>{modalContent}</Modal>,
           document.body
         )}
+        <div className={styles.cont}>
+       <div className={styles.title}>
+        <h1 className={styles.local}>РАБОТЫ СТУДЕНТОВ</h1>
+        <input
+          className={styles.search}
+          type="search"
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            console.log(e.target.value);
+          }}
+          placeholder="Поиск..."
+        ></input>
+      </div>
       <div className={styles.container}>
-        {works.map((item, index) => (
+        {filteredWorks.length > 0 ? (
+        filteredWorks.map((item, index) => (
           <div
             style={{ backgroundImage: `url(${item.titleImage})` }}
             key={index}
@@ -52,7 +78,11 @@ const index = () => {
               <span>{item.title}</span>
             </small>
           </div>
-        ))}
+        ))) :
+        (
+          <p style={{margin:'auto auto'}}>Ничего не найдено</p>
+        )}
+      </div>
       </div>
     </>
   );

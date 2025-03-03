@@ -1,0 +1,23 @@
+.icon::before {
+  content: "≡";
+  transition: 0.3s ease-in-out;
+}
+
+.openIcon::before {
+    content: "x";
+}
+
+.menu {
+  display: none;
+}
+
+.open {
+    display: block;
+    position: absolute;
+    top:100%;
+    height: 60vh;
+    width: 50vw;
+    background-color: red;
+    right:0;
+}
+

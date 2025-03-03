@@ -1,6 +1,6 @@
 .container {
-  margin-top: 9vh;
-  padding: 4vh 2vw;
+  /* margin-top: 3rem; */
+  padding: 0 2vw;
   /* padding-bottom: 0; */
   width: 100%;
   min-height: 80vh;
@@ -28,6 +28,10 @@
   justify-content: center;
   align-items: center;
   flex: 45vmax 1;
+  padding: 1rem 1rem;
+  @media (max-width:768px) {
+    font-size: 0.6rem;
+  }
   
 }
 
@@ -39,12 +43,43 @@
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
-  padding: 2.5vmin 3vmin;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   filter: saturate(0.1);
   transition: var(--transition-default);
+
+}
+
+.blockText {
+  cursor: pointer;
+  height: 41vh;
+  min-height: 200px;
+  flex: 45vmax 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--spacing-l);
+  filter: saturate(0.1);
+  transition: var(--transition-default);
+  cursor: default;
+  background-image: none;
+  filter: none;
+  background-color: var(--text-color-bright);
+
+  small {
+    
+    @media (max-width:768px) {
+      font-size: 1.0rem;
+    }
+    line-height: 150%;
+  }
+
 }
 
 .blockSmall {

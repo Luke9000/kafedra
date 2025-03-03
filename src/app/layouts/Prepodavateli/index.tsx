@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { teachers } from "../../../entities/teachers";
 import styles from "./Table.module.css";
 
@@ -11,27 +11,26 @@ const SwitchableTable: React.FC = () => {
       item.subtext.toLowerCase().includes(query.toLowerCase())
   );
 
-  
-
   return (
     <div className={styles.cont}>
       <div className={styles.title}>
         <h1 className={styles.local}>ПРЕПОДАВАТЕЛИ</h1>
         <input
-        className={styles.search}
+          className={styles.search}
           type="search"
           value={query}
-          onChange={(e) => {setQuery(e.target.value);
-            console.log(e.target.value);}
-          }
+          onChange={(e) => {
+            setQuery(e.target.value);
+            console.log(e.target.value);
+          }}
           placeholder="Поиск..."
         ></input>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.grid}>
-          {filteredTeachers.map(function (item, index) {
-            return (
-              <div className={styles.gridItem}>
+          {filteredTeachers.length > 0 ? (
+            filteredTeachers.map((item, index) => (
+              <div className={styles.gridItem} key={index}>
                 <img key={index} src={item.image}></img>
                 <div className={styles.teacherText}>
                   <p className={styles.teachers} key={index}>
@@ -42,8 +41,10 @@ const SwitchableTable: React.FC = () => {
                   </small>
                 </div>
               </div>
-            );
-          })}
+            ))
+          ) : (
+            <p style={{margin:'0 auto'}}>Ничего не найдено</p>
+          )}
         </div>
       </div>
     </div>
