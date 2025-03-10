@@ -17,7 +17,7 @@ const index = () => {
           </div>
 
           <div className={styles.ColumnInfo}>
-            <h2 className={clsx('alt',styles.extraMargin)}>
+            <h2 className={clsx('alt')}>
               <strong className="alt">3</strong> Профиля магистратуры
             </h2>
             <p className="alt">Прикладная информатика в дизайне</p>
@@ -30,7 +30,7 @@ const index = () => {
         </div>
 
         <div className={styles.ColumnInfo2}>
-          <h2 className={clsx('alt',styles.extraMargin)}>
+          <h2 className={clsx('alt')}>
             <strong className="alt">1</strong> Профиль среднего
             профессионального образования
           </h2>

@@ -163,7 +163,8 @@
 
 
 .cont {
-  padding: 0 2vw;
+  /* padding: 0 2vw; */
+  padding: 0 var(--padding-hor);
   width: 100%;
   height: auto;
   display: flex;
@@ -203,11 +204,17 @@
   border-radius: .4rem;
   @media (max-width:768px) {
     width: 21%;
-    height: 1.2rem;
+    height: 1.4rem;
   }
 }
 
 .local {
   margin: 0;
   line-height: .85;
+}
+
+
+.img {
+  width: 95%;
+  height: auto;
 }

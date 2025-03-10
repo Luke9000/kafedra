@@ -12,6 +12,7 @@
 }
 
 .footerUpper {
+    padding: 0 var(--padding-hor);
     padding: 1rem;
     flex-direction: row;
     display: flex;
@@ -42,7 +43,9 @@
 
 .urlWrapper {
     /* margin-top:3vmin; */
-    padding: 4vmin 1rem;
+    padding: 0 var(--padding-hor);
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -78,4 +81,9 @@
     flex-direction: row;
     align-items: flex-start;
     gap:1vmin;
+}
+
+
+.pad {
+    padding: 0 var(--padding-hor);
 }

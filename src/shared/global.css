@@ -36,6 +36,8 @@
   --spacing-s: 0.4rem;
   --spacing-xs: 0.2rem;
 
+  --padding-hor: 1.2rem;
+
   --border-default: 0.02rem solid var(--text-color-regular);
   --border-opposite: 0.02rem solid var(--text-color-opposite);
   --transition-default: all 0.3s ease-in-out;
@@ -122,6 +124,7 @@ main {
 
 section {
   background-color: #ffffff;
+  padding: 0 var(--padding-hor);
   padding-bottom: 5vmax;
   padding-top: 0.1rem;
   display: block;
@@ -281,7 +284,7 @@ a {
   padding: 0.2rem 0.2rem;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  /* background-color: rgba(255, 255, 255, 0.85); */
+  
   @media (min-width: 1350px) {
     font-size: 0.6rem;
     padding: 0.2rem 0.4rem;
@@ -351,7 +354,7 @@ a:hover {
 }
 
 hr {
-  width: 100%;
+  width: 100vw;
   height: 0.02rem;
 }
 
@@ -361,3 +364,7 @@ hr {
 <Route path="/kafedra/vkr" element={<VkrPage />} />
 <Route path="/kafedra/raspisanie" element={<ShedulePage />} />
 <Route path="/kafedra/prepodavateli" element={<TeachersPage />} /> */
+
+li {
+  list-style: none;
+}

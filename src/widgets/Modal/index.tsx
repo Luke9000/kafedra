@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./styles.css";
+import CrossThin from '../../shared/assets/icons/svg-raw/CrossThin.svg?react'
 
 interface Props {
   children?: React.ReactNode;
@@ -8,14 +9,11 @@ interface Props {
 
 const index = ({ children, onClose }: Props) => {
   const InsideClick = (event: React.MouseEvent) => {
-    event.stopPropagation()
-  }
-
+    event.stopPropagation();
+  };
 
   useEffect(() => {
-    
     document.documentElement.style.overflow = "hidden";
-   
 
     return () => {
       document.documentElement.style.overflow = "";
@@ -25,7 +23,7 @@ const index = ({ children, onClose }: Props) => {
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        onClose(); 
+        onClose();
       }
     };
 
@@ -37,7 +35,11 @@ const index = ({ children, onClose }: Props) => {
 
   return (
     <div className="modalWrapper" onClick={onClose}>
-      <div className="modal" onClick={InsideClick}>{children}</div>
+    
+      <div className="modal" onClick={InsideClick}>
+        {children}
+      </div>
+      <CrossThin className='closeIcon'></CrossThin>
     </div>
   );
 };

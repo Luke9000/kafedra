@@ -1,11 +1,13 @@
 .flexRow {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 2.5rem 0;
+  padding: 0 var(--padding-hor);
   @media (min-width: 768px) {
     flex-direction: row;
     gap: 5vw;
@@ -114,4 +116,10 @@
     flex-direction: column;
     gap: 0.5vh;
   }
+}
+
+.title {
+  margin:0;
+  padding: 0;
+  padding: 0 var(--padding-hor);
 }

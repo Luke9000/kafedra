@@ -1,8 +1,7 @@
-import event7 from '../shared/assets/images/events/7.png';
-import event8 from '../shared/assets/images/events/8.jpg';
-import event1 from '../shared/assets/images/events/event1.png';
-import event2 from '../shared/assets/images/events/event2.png';
-import event3 from '../shared/assets/images/events/event3.png';
+import event1 from '../shared/assets/images/events/event1.webp';
+import event2 from '../shared/assets/images/events/event2.webp';
+import event3 from '../shared/assets/images/events/event3.webp';
+import event4 from '../shared/assets/images/events/event4.webp';
 
 export const events = [
   
@@ -27,13 +26,15 @@ export const events = [
     {
       "text" : "Фестиваль настольных игр",
       "subtext" : "Старший преподаватель",
-      "image" : event8
+      "image" : event4
     },
 
     {
       "text" : "Лекция про творческий кризис",
       "subtext" : "Старший преподаватель",
-      "image" : event7
+      "image" : event1
     },
   ]
 ;
+
+export default events

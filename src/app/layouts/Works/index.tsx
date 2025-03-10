@@ -66,7 +66,7 @@ const index = () => {
                   </div>
                   <div className={styles.modalImages}>
                     {item.images.map((item2, index2) => (
-                      <img key={index2} src={item2}></img>
+                      <img className={styles.img} key={index2} src={item2}></img>
                     ))}
                   </div>
                 </div>

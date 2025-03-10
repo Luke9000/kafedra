@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import { useState } from "react";
-import { Projects, Events, SPO, CK } from "../../../entities/heroModals";
+import { Events, Kursi, CK } from "../../../entities/heroModals";
 
 const index = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,31 +23,23 @@ const index = () => {
           document.body
         )}
       <div className={styles.container}>
-        
-      <div className={styles.blockText}>
+        <div className={styles.blockText}>
           <p className="alt2">О кафедре</p>
           <small className={clsx("alt", styles.smallLineHeight)}>
-          Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
-          разработкой и внедрением передовых решений в области информационных
-          технологий и цифровизации
+            Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
+            разработкой и внедрением передовых решений в области информационных
+            технологий и цифровизации
           </small>
         </div>
-        {/* <p className={styles.heroText}>
-          Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
-          разработкой и внедрением передовых решений в области информационных
-          технологий и цифровизации. Наши программы направлены на подготовку
-          специалистов, способных создавать инновационные цифровые продукты
-        </p> */}
-
-        <div className={styles.block} onClick={() => openModal(SPO)}>
-          <p className="alt2">Среднее профессиональное образование</p>
+        <div className={styles.block} onClick={() => openModal(Kursi)}>
+          <p className="alt2">Подготовительные курсы</p>
           <small className={clsx("alt", styles.smallLineHeight)}>
-            Подготовка специалистов IT направлений после девятого и одинадцатого
-            классов
+            Возможность для студентов 9 и 11 классов подготовиться к
+            вступительным испытаниям
           </small>
         </div>
 
-        <div className={styles.block} onClick={() => openModal(CK)}>
+        <div className={styles.block} onClick={() => openModal(Events)}>
           <p className="alt2">Мероприятия</p>
           <small className={clsx("alt", styles.smallLineHeight)}>
             Более 2000 студентов различных направлений со всего университета
@@ -62,8 +54,6 @@ const index = () => {
             осваивают IT направления
           </small>
         </div>
-
-
       </div>
     </>
   );

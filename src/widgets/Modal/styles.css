@@ -45,12 +45,25 @@
     padding: 2rem 1rem;
   }
 
-  img {
+  /* img {
     width: 95%;
     height: auto;
-  }
+  } */
 }
 
 .modalWrapper .modal {
   cursor: default;
+}
+
+
+.closeIcon {
+  position: absolute;
+  top: .75rem;
+  right: .5rem;
+  @media (max-width:768px) {
+    height: 1rem;
+    top: .55rem;
+  right: .25rem;
+  }
+  
 }
