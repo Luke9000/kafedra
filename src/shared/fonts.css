@@ -1,25 +1,4 @@
 @font-face {
-    font-family: 'Gilroy';
-    font-weight: 700; /*BOLD */
-    font-style: normal;
-    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    font-weight: 400; /*REGULAR */
-    font-style: normal;
-    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    font-weight: 300; /*LIGHT */
-    font-style: normal;
-    src: local('Gilroy'), url(./fonts/Gilroy/Gilroy-Light.ttf) format('truetype');
-}
-
-@font-face {
     font-family: 'NEUTRALFACE';
     font-weight: 700; /*BOLD */
     font-style: normal;

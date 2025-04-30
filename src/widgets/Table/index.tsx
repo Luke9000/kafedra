@@ -53,38 +53,3 @@ const SwitchableTable: React.FC = () => {
 };
 
 export default SwitchableTable;
-
-// import { Projects, Events } from "../../../entities/heroModals";
-
-// const index = () => {
-//   const [showModal, setShowModal] = useState(false);
-//   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
-//     null
-//   );
-//   const openModal = (content: React.ReactNode) => {
-//     setModalContent(content);
-//     setShowModal(true);
-//   };
-
-//   return (
-//     <>
-//       {showModal &&
-//         createPortal(
-//           <Modal onClose={() => setShowModal(false)}>{modalContent}</Modal>,
-//           document.body
-//         )}
-//       <div className={styles.container}>
-//         <p className={styles.heroText}>
-//           Кафедра цифровых и аддитивных технологий СПБГУПТД занимается
-//           разработкой и внедрением передовых решений в области информационных
-//           технологий и цифровизации. Наши программы направлены на подготовку
-//           специалистов, способных создавать инновационные цифровые продукты
-//         </p>
-
-//         <div className={styles.block} onClick={() => setShowModal(true)}>
-//           <p className="alt2">Среднее профессиональное образование</p>
-//           <small className={clsx("alt", styles.smallLineHeight)}>
-//             Подготовка специалистов IT направлений после девятого и одинадцатого
-//             классов
-//           </small>
-//         </div>

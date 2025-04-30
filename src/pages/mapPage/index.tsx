@@ -1,5 +1,5 @@
 import DashboardLayout from "../../app/layouts/DashboardLayout";
-// import FloorPlan from "../../widgets/FloorPlan";
+import FloorPlan from "../../widgets/FloorPlan";
 import styles from "./styles.module.css";
 
 const index = () => {
@@ -7,8 +7,8 @@ const index = () => {
     <div>
       <DashboardLayout>
         <div className={styles.wrapper}>
-          {/* <FloorPlan></FloorPlan> */}
-          <h1>СТРАНИЦА В РАЗРАБОТКЕ</h1>
+          <FloorPlan></FloorPlan>
+          {/* <h1>СТРАНИЦА В РАЗРАБОТКЕ</h1> */}
         </div>
       </DashboardLayout>
     </div>

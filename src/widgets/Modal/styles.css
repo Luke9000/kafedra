@@ -28,8 +28,8 @@
   /* padding: 1rem; */
   border-radius: 1rem;
   /* height: 85vh; */
-  min-height: 60vh;
-
+  min-height: 20vh;
+  height: fit-content;
   width: 95%;
   border: var(--border-default);
   background-color: var(--background-color-1);
@@ -55,15 +55,13 @@
   cursor: default;
 }
 
-
 .closeIcon {
   position: absolute;
-  top: .75rem;
-  right: .5rem;
-  @media (max-width:768px) {
+  top: 0.75rem;
+  right: 0.5rem;
+  @media (max-width: 768px) {
     height: 1rem;
-    top: .55rem;
-  right: .25rem;
+    top: 0.55rem;
+    right: 0.25rem;
   }
-  
 }

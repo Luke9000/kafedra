@@ -1,7 +1,6 @@
 import w1 from "../shared/assets/images/works/1.jpeg";
 import w2 from "../shared/assets/images/works/2.jpeg";
 import w3 from "../shared/assets/images/works/3.jpeg";
-import w4 from "../shared/assets/images/works/4.jpeg";
 
 export const works = [
   {

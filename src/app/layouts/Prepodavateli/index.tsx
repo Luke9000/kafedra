@@ -23,7 +23,7 @@ const SwitchableTable: React.FC = () => {
             setQuery(e.target.value);
             console.log(e.target.value);
           }}
-          placeholder="Поиск..."
+          placeholder="Поиск"
         ></input>
       </div>
       <div className={styles.wrapper}>

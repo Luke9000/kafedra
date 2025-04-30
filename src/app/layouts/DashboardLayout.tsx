@@ -1,6 +1,5 @@
 import Footer from '../../widgets/Footer';
-import Header from '../../widgets/Header/index'
-import Toolbar from '../../widgets/Toolbar'
+import Header from '../../widgets/Header/index';
 
 
 interface Props {

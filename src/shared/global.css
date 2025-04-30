@@ -15,6 +15,7 @@
   --text-color-opposite: #ffffff;
   --logo-color-dark: #1f1440;
   --text-color-dull-2: #d4d4d4;
+  --text-color-dull-3: #8f8f8f;
 
   /* FONTS */
   --font-size-big: 32px;
@@ -29,7 +30,7 @@
   --font-family-regular: "Onest";
   --font-family-accent: "NEUTRALFACE";
 
-  /* TEMP */
+  /* SPACING */
   --spacing-xl: 2.2rem;
   --spacing-l: 1.5rem;
   --spacing-m: 1rem;
@@ -60,6 +61,7 @@
 }
 
 html {
+  
   scroll-behavior: smooth;
 
   -webkit-overflow-scrolling: touch;
@@ -108,7 +110,7 @@ html {
 
   height: 100vh;
   min-width: var(--min-width);
-
+  font-family: Onest;
   width: 100%;
   display: block;
   background-color: transparent;

@@ -1,16 +1,11 @@
 import clsx from "clsx";
 import Layout from "../../app/layouts/DashboardLayout";
+import Hero from "../../app/layouts/Hero";
 import StudyRoute from "../../app/layouts/StudyRoute";
 import Table from "../../widgets/Table";
 import styles from "./styles.module.css";
-import Hero from "../../app/layouts/Hero";
-import { useState } from "react";
-import { createPortal } from "react-dom";
-import Modal  from "../../widgets/Modal";
 
 const MainPage = () => {
-  // const [showModal, setShowModal] = useState(false);
-
   return (
     <Layout>
       <Hero></Hero>
@@ -18,14 +13,6 @@ const MainPage = () => {
         <h1 className={styles.left5vw}>СФЕРЫ ДЕЯТЕЛЬНОСТИ</h1>
         <Table></Table>
       </section>
-      {/* <div className={styles.parallax}>
-        <div className={styles.blockLeft}>
-          <h3 className={styles.special}>Всего студентов кафедры</h3>
-        </div>
-        <div className={styles.blockRight}>
-          <h2 className={styles.special}>1031 Человек</h2>
-        </div>
-      </div> */}
       <section>
         <div className={styles.fullScreen}>
           <h1 className={clsx(styles.left5vw, "alt")}>
@@ -34,7 +21,6 @@ const MainPage = () => {
           <StudyRoute></StudyRoute>
         </div>
       </section>
-     
     </Layout>
   );
 };

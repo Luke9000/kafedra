@@ -8,6 +8,7 @@ import Works from "../../shared/assets/icons/svg-raw/WorksThin.svg?react";
 import Home from "../../shared/assets/icons/svg-raw/HomeThin.svg?react";
 import Menu from "../../shared/assets/icons/svg-raw/MenuThin.svg?react";
 import Cross from "../../shared/assets/icons/svg-raw/CrossThin.svg?react";
+import CalendarThin from "../../shared/assets/icons/svg-raw/CalendarThin.svg?react";
 
 import { Link } from "react-router-dom";
 
@@ -53,12 +54,12 @@ const index = () => {
               key: "Scheme",
               text: "ПЛАН ЭТАЖА",
             },
-            // {
-            //   to: "/kafedra/raspisanie",
-            //   Icon: Calendar,
-            //   key: "Calendar",
-            //   text: "РАБОТЫ СТУДЕНТОВ",
-            // },
+            {
+              to: "/kafedra/raspisanie",
+              Icon: CalendarThin,
+              key: "Calendar",
+              text: "РАСПИСАНИЕ",
+            },
             {
               to: "/kafedra/vkr",
               Icon: Graduate,

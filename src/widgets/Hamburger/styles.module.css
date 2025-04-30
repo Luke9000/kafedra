@@ -31,7 +31,7 @@
     top:100%;
     min-height: 20vh;
     padding: 0;
-    width: 80vw;
+    width: 100vw;
     background-color: var(--background-color-main);
     right:0;
     flex-direction: column;

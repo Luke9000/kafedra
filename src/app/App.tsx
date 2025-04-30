@@ -7,6 +7,7 @@ import VkrPage from "../pages/vkrPage";
 import TeachersPage from "../pages/teachersPage";
 import ShedulePage from "../pages/shedulePage";
 
+
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
 
@@ -20,6 +21,7 @@ const ScrollToTop: React.FC = () => {
 const App: React.FC = () => {
   return (
     <>
+    
       <ScrollToTop />
       <Routes>
         <Route path="/kafedra/raboti_studentov" element={<WorksPage />} />

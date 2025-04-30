@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  width: 94%;
+}
+
+.test {
+  stroke: darkblue;
+  fill: red;
+}
+.test:hover {
+  cursor: pointer;
+  color: red;
+  fill: red;
+  stroke: red;
+  background-color: red;
+}

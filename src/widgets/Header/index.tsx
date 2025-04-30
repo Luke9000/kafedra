@@ -55,7 +55,7 @@ const index = () => {
               ИНТЕРАКТИВНАЯ КАРТА
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
               draggable={false}
               to="/kafedra/raspisanie"
@@ -63,7 +63,7 @@ const index = () => {
             >
               РАСПИСАНИЕ
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink
               draggable={false}

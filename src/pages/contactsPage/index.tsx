@@ -1,5 +1,5 @@
 import Layout from '../../app/layouts/DashboardLayout';
-import FloorPlan from '../../widgets/FloorPlan';
+import FloorPlan from '../../widgets/FloorPlanOld';
 import Map from '../../widgets/Map';
 import styles from './styles.module.css';
 
