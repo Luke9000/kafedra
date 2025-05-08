@@ -1,15 +1,15 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "../Modal";
 import WeekParity from "../weekParity";
 import data from "./data.json";
 import styles from "./styles.module.css";
 import groups from "./groups";
+import useWindowSize from "../../shared/hooks/useWindowSize";
 
 const index = () => {
   const [group, setGroup] = useState("1-МГ-2");
   const [parity, setParity] = useState("числ");
-  //   знам
 
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
@@ -93,14 +93,14 @@ const index = () => {
             <input
               className={styles.btn}
               type="button"
-              value={parity == 'числ'? 'Числитель': 'Знаменатель'}
+              value={parity == "числ" ? "Числитель" : "Знаменатель"}
               onClick={() =>
                 openModal(
                   <div className={styles.modal}>
                     <input
                       className={styles.btn}
                       type="button"
-                      value='Числитель'
+                      value="Числитель"
                       onClick={() => {
                         setParity("числ");
                         setShowModal(false);
@@ -109,7 +109,7 @@ const index = () => {
                     <input
                       className={styles.btn}
                       type="button"
-                      value='Знаменатель'
+                      value="Знаменатель"
                       onClick={() => {
                         setParity("зн");
                         setShowModal(false);
@@ -133,7 +133,7 @@ const index = () => {
                   <h5 className={styles.cell}>Время</h5>
                   <h5 className={styles.cell}>Дисциплина</h5>
                   <h5 className={styles.cell}>Аудитория</h5>
-                  <h5>Формат</h5>
+                  {useWindowSize().width > 768 ? <h5>Формат</h5> : null}
                 </div>
 
                 {groupedByDay[item0].map((item, index) => (
@@ -141,7 +141,11 @@ const index = () => {
                     <p className={styles.time}>{item.Время}</p>
                     <p>{item.Диспциплина}</p>
                     <p>{item.Аудитория}</p>
-                    <p>{item["Вид занятий"] == 'Лек'? 'Лекция':'Практика'}</p>
+                    {useWindowSize().width > 768 ? (
+                      <p>
+                        {item["Вид занятий"] == "Лек" ? "Лекция" : "Практика"}
+                      </p>
+                    ) : null}
                   </div>
                 ))}
               </div>

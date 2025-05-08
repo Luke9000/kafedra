@@ -71,6 +71,7 @@ html {
   background-color: transparent;
 
   ::-webkit-scrollbar {
+    height: 0.2rem;
     width: 0.2rem;
     color: transparent;
   }

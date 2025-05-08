@@ -46,7 +46,12 @@
   flex-direction: row;
   gap: 0.5rem; */
   display: grid;
-  grid-template-columns: minmax(50px,1fr) minmax(50px,2.5fr) minmax(50px,1fr) minmax(50px,1fr);
+  grid-template-columns: minmax(50px,1fr) minmax(50px,2.5fr) minmax(50px,1fr);
+  @media (min-width : 768px) {
+    grid-template-columns: minmax(125px,1fr) minmax(125px,2.5fr) minmax(125px,1fr) minmax(125px,1fr);
+  }
+  
+  
   gap: 14px;
   word-wrap: break-word;
 }

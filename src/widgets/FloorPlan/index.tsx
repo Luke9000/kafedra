@@ -22,7 +22,7 @@ const index = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.svgWrapper}>
-        <svg ref={image} overflow="auto" preserveAspectRatio="xMidYMid slice" width="1687" height="434" viewBox="0 0 1687 434" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg ref={image} preserveAspectRatio="xMidYMid slice" width="1561" height="434" viewBox="0 0 1561 434" fill="none" xmlns="http://www.w3.org/2000/svg">
           <Image></Image>
         </svg>
       </div>
