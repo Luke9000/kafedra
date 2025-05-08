@@ -17,3 +17,8 @@
   stroke: red;
   background-color: red;
 }
+
+.svgWrapper {
+
+  overflow: scroll;
+}

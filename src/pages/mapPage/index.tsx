@@ -7,6 +7,9 @@ const index = () => {
     <div>
       <DashboardLayout>
         <div className={styles.wrapper}>
+          <div className={styles.title}>
+            <h1 className={styles.local}>ПЛАН ЭТАЖА</h1>
+          </div>
           <FloorPlan></FloorPlan>
           {/* <h1>СТРАНИЦА В РАЗРАБОТКЕ</h1> */}
         </div>
