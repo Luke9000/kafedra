@@ -1,9 +1,7 @@
+import { useEffect, useRef } from "react";
 import Image from "./Image.tsx";
-import Legend from "./Legend.tsx";
-import LegendData from "./LegendData.ts";
 import LegendsList from "./LegendsList.tsx";
 import styles from "./styles.module.css";
-import { useRef, useEffect } from "react";
 
 // function appendClassAttr(obj: SVGSVGElement) {
 //   for (let item of obj.children) {

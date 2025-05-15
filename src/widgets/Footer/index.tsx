@@ -92,10 +92,10 @@ const index = () => {
       <hr></hr>
 
       <div className={styles.urlWrapper}>
-        <a href="https://suitd.ru" className={clsx(styles.phoneBlock, "left")}>
+        <a href="https://sutd.ru" className={clsx(styles.phoneBlock, "left")}>
           <div className={styles.phoneBlock}>
             <div className={styles.inline}>
-              <p className="alt2">suitd.ru</p>
+              <p className="alt2">sutd.ru</p>
               <FooterLink></FooterLink>
             </div>
             <small className="alt">Главный сайт университета</small>
@@ -114,12 +114,12 @@ const index = () => {
           </div>
         </a>
         <a
-          href="https://lk.suitd.ru"
+          href="https://portal.sutd.ru"
           className={clsx(styles.phoneBlock, "left")}
         >
           <div className={styles.phoneBlock}>
             <div className={styles.inline}>
-              <p className="alt2">lk.suitd.ru</p>
+              <p className="alt2">portal.sutd.ru</p>
               <FooterLink></FooterLink>
             </div>
             <small className="alt">Сайт личного кабинета</small>
