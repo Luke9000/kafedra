@@ -52,7 +52,7 @@ const index = () => {
               to="/kafedra/karta"
               className={({ isActive }) => (isActive ? styles.activeLink : "")}
             >
-              ПЛАН ЭТАЖА
+              КАРТА КАФЕДРЫ
             </NavLink>
           </li>
           <li>

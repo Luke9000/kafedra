@@ -52,7 +52,7 @@ const index = () => {
               to: "/kafedra/karta",
               Icon: Scheme,
               key: "Scheme",
-              text: "ПЛАН ЭТАЖА",
+              text: "КАРТА КАФЕДРЫ",
             },
             {
               to: "/kafedra/raspisanie",

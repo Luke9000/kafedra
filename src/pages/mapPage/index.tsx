@@ -8,7 +8,7 @@ const index = () => {
       <DashboardLayout>
         <div className={styles.wrapper}>
           <div className={styles.title}>
-            <h1 className={styles.local}>ПЛАН ЭТАЖА</h1>
+            <h1 className={styles.local}>КАРТА КАФЕДРЫ</h1>
           </div>
           <FloorPlan></FloorPlan>
           {/* <h1>СТРАНИЦА В РАЗРАБОТКЕ</h1> */}

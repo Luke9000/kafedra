@@ -14,11 +14,10 @@ const index = () => {
             </small>
           </div>
           <div className={styles.filler}></div>
-          <div
-            className={styles.IconWrapper}
-            onClick={(event) => event.preventDefault()}
-          >
-            <DownloadIcon />
+          <div className={styles.IconWrapper}>
+            <a href="https://example.com">
+              <DownloadIcon />
+            </a>
           </div>
         </div>
 
@@ -31,11 +30,10 @@ const index = () => {
             </small>
           </div>
           <div className={styles.filler}></div>
-          <div
-            className={styles.IconWrapper}
-            onClick={(event) => event.preventDefault()}
-          >
-            <DownloadIcon />
+          <div className={styles.IconWrapper}>
+            <a href="https://example.com">
+              <DownloadIcon />
+            </a>
           </div>
         </div>
 
@@ -48,11 +46,10 @@ const index = () => {
             </small>
           </div>
           <div className={styles.filler}></div>
-          <div
-            className={styles.IconWrapper}
-            onClick={(event) => event.preventDefault()}
-          >
-            <DownloadIcon />
+          <div className={styles.IconWrapper}>
+            <a href="https://example.com">
+              <DownloadIcon />
+            </a>
           </div>
         </div>
       </div>
