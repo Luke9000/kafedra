@@ -1,9 +1,9 @@
-import styles from "./styles.module.css";
 import clsx from "clsx";
-import { works } from "../../../entities/works";
-import { createPortal } from "react-dom";
-import Modal from "../../../widgets/Modal";
 import { useState } from "react";
+import { createPortal } from "react-dom";
+import { works } from "../../../entities/works";
+import Modal from "../../../widgets/Modal";
+import styles from "./styles.module.css";
 const index = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
@@ -25,8 +25,11 @@ const index = () => {
     );
   
 
+
+
   return (
     <>
+
       {showModal &&
         createPortal(
           <Modal onClose={() => setShowModal(false)}>{modalContent}</Modal>,
