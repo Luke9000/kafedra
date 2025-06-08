@@ -40,7 +40,6 @@
 
 .humbWrapper {
   display: none;
-  overflow: scroll;
   @media (max-width:1023.5px) {
     display: block;
   }

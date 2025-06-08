@@ -1,107 +1,174 @@
-import t1 from '../shared/assets/images/teachers/1x.jpg';
-import t2 from '../shared/assets/images/teachers/2x.jpg';
-import t3 from '../shared/assets/images/teachers/3x.jpg';
-import t4 from '../shared/assets/images/teachers/4x.jpg';
-import t5 from '../shared/assets/images/teachers/5x.jpg';
-
+import soshnikov from "../shared/assets/images/teachers-optimized/Sohnikov.jpg";
+import drobotun from "../shared/assets/images/teachers-optimized/Drobotyn.jpg";
+import valuev from "../shared/assets/images/teachers-optimized/Valuev_K.jpg";
+import volkov from "../shared/assets/images/teachers-optimized/Volkov.jpg";
+import volkova from "../shared/assets/images/teachers-optimized/Volkova_GK.jpg";
+import zverev from "../shared/assets/images/teachers-optimized/zverev-vv.jpg";
+import knyazeva from "../shared/assets/images/teachers-optimized/Knyazeva_IK.jpg";
+import kokorin from "../shared/assets/images/teachers-optimized/Kokorin_ES.jpg";
+import kolmykova from "../shared/assets/images/teachers-optimized/Kolmikova_MM.jpg";
+import kolcun from "../shared/assets/images/teachers-optimized/kolcun-nv.jpg";
+import kosareva from "../shared/assets/images/teachers-optimized/Kosareva_AN.jpg";
+import kostuk from "../shared/assets/images/teachers-optimized/Kostuk_IS.jpg";
+import medvedeva from "../shared/assets/images/teachers-optimized/Medvedeva.jpg";
+import morgoeva from "../shared/assets/images/teachers-optimized/Morgoeva_IU.jpg";
+import rymyanceva from "../shared/assets/images/teachers-optimized/rumyanceva-da.jpg";
+import savenkova from "../shared/assets/images/teachers-optimized/Savenkova_PV.jpg";
+import slavnikova from "../shared/assets/images/teachers-optimized/Slavnikova_MA.jpg";
+import soshnikova from "../shared/assets/images/teachers-optimized/Soshnikova_IA.jpg";
+import sukhanov from "../shared/assets/images/teachers-optimized/Sukhanov.png";
+import talant from "../shared/assets/images/teachers-optimized/Talant_VV.jpg";
+import shevyakova from "../shared/assets/images/teachers-optimized/Shevyzkova_AR.jpg";
+import shustov from "../shared/assets/images/teachers-optimized/shustov-da.jpg";
+import yakunicheva from "../shared/assets/images/teachers-optimized/Yakunicheva_EN.jpg";
+import yakunicheva_jr from "../shared/assets/images/teachers-optimized/yakunicheva-ka.jpg";
+import yaroslavceva from "../shared/assets/images/teachers-optimized/yaroslavceva.jpg";
 
 export const teachers = [
-  
-    {
-      "text" : "Ярославцева Елена Константиновна",
-      "subtext" : "Старший преподаватель",
-      "image" : t1
-    },
+  {
+    text: "Сошников Антон Владимирович",
+    subtext: "Заведующий кафедрой цифровых и аддитивных технологий",
+    image: soshnikov,
+  },
 
-    {
-      "text" : "Мургоева Ирма Юрьевна",
-      "subtext" : "Доцент",
-      "image" : t2
-    },
+  {
+    text: "Дроботун Нина Владимировна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: drobotun,
+  },
 
-    {
-      "text" : "Суханов Михаил Борисович",
-      "subtext" : "Старший преподаватель",
-      "image" : t3
-    },
+  {
+    text: "Валуев Константин Владимирович",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: valuev,
+  },
 
-    {
-      "text" : "Шевякова Анастасия Рустамовна",
-      "subtext" : "Доктор наук",
-      "image" : t4
-    },
+  {
+    text: "Волков Андрей Игоревич",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: volkov,
+  },
 
-    {
-      "text" : "Медведева Анна Александровна",
-      "subtext" : "Ассистент кафедры",
-      "image" : t5
-    },
+  {
+    text: "Волкова Галина Константиновна",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: volkova,
+  },
 
-    
+  {
+    text: "Зверев Владислав Витальевич",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: zverev,
+  },
 
+  {
+    text: "Князева Ирина Константиновна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: knyazeva,
+  },
 
+  {
+    text: "Кокорин Евгений Сергеевич",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: kokorin,
+  },
 
+  {
+    text: "Колмыкова Маргарита Михайловна",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: kolmykova,
+  },
 
+  {
+    text: "Колцун Никита Валерьевич",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: kolcun,
+  },
+  {
+    text: "Косарева Анастасия Николаевна",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: kosareva,
+  },
 
+  {
+    text: "Костюк Инна Сергеевна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: kostuk,
+  },
 
+  {
+    text: "Медведева Анна Александровна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: medvedeva,
+  },
 
-    {
-      "text" : "Ярославцева Елена Константиновна",
-      "subtext" : "Старший преподаватель",
-      "image" : t1
-    },
+  {
+    text: "Моргоева Ирма Юрьевна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: morgoeva,
+  },
 
-    {
-      "text" : "Мургоева Ирма Юрьевна",
-      "subtext" : "Старший преподаватель",
-      "image" : t2
-    },
+  {
+    text: "Румянцева Дарья Алексеевна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: rymyanceva,
+  },
+  {
+    text: "Савенкова Полина Владимировна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: savenkova,
+  },
+  {
+    text: "Славникова Мария Александровна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: slavnikova,
+  },
 
-    {
-      "text" : "Суханов Михаил Борисович",
-      "subtext" : "Ассистент кафедры",
-      "image" : t3
-    },
+  {
+    text: "Сошникова Ирина Анатольевна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: soshnikova,
+  },
 
-    {
-      "text" : "Шевякова Анастасия Рустамовна",
-      "subtext" : "Старший преподаватель",
-      "image" : t4
-    },
+  {
+    text: "Суханов Михаил Борисович",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: sukhanov,
+  },
 
-    {
-      "text" : "Медведева Анна Александровна",
-      "subtext" : "Ассистент кафедры",
-      "image" : t5
-    },
-    {
-      "text" : "Ярославцева Елена Константиновна",
-      "subtext" : "Старший преподаватель",
-      "image" : t1
-    },
+  {
+    text: "Талант Валентина Вадимовна",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: talant,
+  },
 
-    {
-      "text" : "Мургоева Ирма Юрьевна",
-      "subtext" : "Ассистент кафедры",
-      "image" : t2
-    },
+  {
+    text: "Шевякова Анастасия Рустамовна",
+    subtext: "Старший преподаватель кафедры цифровых и аддитивных технологий",
+    image: shevyakova,
+  },
 
-    {
-      "text" : "Суханов Михаил Борисович",
-      "subtext" : "Доцент",
-      "image" : t3
-    },
+  {
+    text: "Шустов Денис Александрович",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: shustov,
+  },
 
-    {
-      "text" : "Шевякова Анастасия Рустамовна",
-      "subtext" : "Доцент",
-      "image" : t4
-    },
+  {
+    text: "Якуничева Елена Николаевна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: yakunicheva,
+  },
 
-    {
-      "text" : "Медведева Анна Александровна",
-      "subtext" : "Старший преподаватель",
-      "image" : t5
-    },
-  ]
-;
+  {
+    text: "Якуничева Ксения Андреевна",
+    subtext: "Ассистент кафедры цифровых и аддитивных технологий",
+    image: yakunicheva_jr,
+  },
+
+  {
+    text: "Ярославцева Елена Константиновна",
+    subtext: "Доцент кафедры цифровых и аддитивных технологий",
+    image: yaroslavceva,
+  },
+];

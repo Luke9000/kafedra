@@ -48,7 +48,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  filter: saturate(0.1);
+  @media (min-width:1024px) {
+    filter: saturate(0.1);
+  }
+  
   transition: var(--transition-default);
 
 }
@@ -116,11 +119,13 @@
 .smallLineHeight {
   line-height: 90%;
 }
-
-.block small {
+@media (min-width:1024px) {
+  .block small {
   opacity: 0%;
   transition: var(--transition-default);
 }
+}
+
 
 .block:hover small {
   opacity: 100%;
